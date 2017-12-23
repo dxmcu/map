@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package>
+  <name>map</name>
+  <version>0.0.0</version>
+  <description>The map package</description>
+
+  <maintainer email="bohuan.xue@gmail.com">echo</maintainer>
+  <author>bohuan</author>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+  <build_depend>message_generation</build_depend>
+  <run_depend>message_runtime</run_depend>
+    <!--
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>tf</depend>
+  <depend>tf_conversions</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>rosbag</depend>
+  <depend>message_generation</depend>
+  <depend>message_runtime</depend>
+  -->
+
+
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+  </export>
+</package>

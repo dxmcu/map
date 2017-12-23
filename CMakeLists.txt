@@ -54,7 +54,9 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   std_msgs
   tf
-)
+  rospy
+  std_msgs
+        message_generation)
 
 catkin_package(
 #  INCLUDE_DIRS include
@@ -62,6 +64,17 @@ catkin_package(
 #  CATKIN_DEPENDS other_catkin_pkg
 #  DEPENDS system_lib
 )
+
+add_service_files(
+        FILES
+        LocalMapRetrieve.srv
+)
+
+#generate_messages(
+#        DEPENDENCIES
+#        std_msgs  # Or other packages containing msgs
+#        sensor_msgs
+#)
 
 ###########
 ## Build ##
@@ -135,7 +148,7 @@ add_executable(map
         include/cvMat2GridMap.h
         #include/cloud2map.h
         #src/cloud2map.cpp
-        include/common_area.h include/showPointCloud.h)
+        include/common_area.h include/showPointCloud.h include/point_cloud.h src/point_cloud.cpp include/map_db_node.h)
 add_dependencies(map ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 target_link_libraries(map ${libpointmatcher_LIBRARIES}

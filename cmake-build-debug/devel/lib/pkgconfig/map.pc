@@ -1,0 +1,8 @@
+prefix=/home/bohuan/catkin_test/src/map/cmake-build-debug/devel
+
+Name: map
+Description: Description of map
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/bohuan/catkin_test/src/map/cmake-build-debug/devel/lib 
+Requires: 

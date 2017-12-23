@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/include/common_area.h" line="204" />
+    <bookmark url="file://$PROJECT_DIR$/include/common_area.h" line="260" />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="map" targetName="sensor_msgs_generate_messages_py" />
+      <config projectName="map" targetName="tests" />
+      <config projectName="map" targetName="tf_generate_messages_cpp" />
+      <config projectName="map" targetName="std_srvs_generate_messages_lisp" />
+      <config projectName="map" targetName="actionlib_generate_messages_eus" />
+      <config projectName="map" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="map" targetName="pcl_msgs_generate_messages_eus" />
+      <config projectName="map" targetName="gtest_main" />
+      <config projectName="map" targetName="tf_generate_messages_lisp" />
+      <config projectName="map" targetName="gtest" />
+      <config projectName="map" targetName="roscpp_generate_messages_eus" />
+      <config projectName="map" targetName="std_srvs_generate_messages_eus" />
+      <config projectName="map" targetName="topic_tools_generate_messages_eus" />
+      <config projectName="map" targetName="bond_generate_messages_eus" />
+      <config projectName="map" targetName="actionlib_msgs_generate_messages_eus" />
+      <config projectName="map" targetName="test_cv2grid" />
+      <config projectName="map" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="map" targetName="nav_msgs_generate_messages_nodejs" />
+      <config projectName="map" targetName="tf_generate_messages_nodejs" />
+      <config projectName="map" targetName="_catkin_empty_exported_target" />
+      <config projectName="map" targetName="bond_generate_messages_lisp" />
+      <config projectName="map" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="map" targetName="tf2_msgs_generate_messages_nodejs" />
+      <config projectName="map" targetName="tf_generate_messages_py" />
+      <config projectName="map" targetName="tf_generate_messages_eus" />
+      <config projectName="map" targetName="actionlib_msgs_generate_messages_nodejs" />
+      <config projectName="map" targetName="bond_generate_messages_nodejs" />
+      <config projectName="map" targetName="dynamic_reconfigure_generate_messages_nodejs" />
+      <config projectName="map" targetName="run_tests" />
+      <config projectName="map" targetName="sensor_msgs_generate_messages_lisp" />
+      <config projectName="map" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="map" targetName="pcl_msgs_generate_messages_cpp" />
+      <config projectName="map" targetName="roscpp_generate_messages_py" />
+      <config projectName="map" targetName="nodelet_generate_messages_py" />
+      <config projectName="map" targetName="nodelet_generate_messages_eus" />
+      <config projectName="map" targetName="nav_msgs_generate_messages_py" />
+      <config projectName="map" targetName="std_srvs_generate_messages_cpp" />
+      <config projectName="map" targetName="actionlib_msgs_generate_messages_py" />
+      <config projectName="map" targetName="topic_tools_generate_messages_nodejs" />
+      <config projectName="map" targetName="actionlib_generate_messages_nodejs" />
+      <config projectName="map" targetName="map" />
+      <config projectName="map" targetName="clean_test_results" />
+      <config projectName="map" targetName="nodelet_generate_messages_nodejs" />
+      <config projectName="map" targetName="nav_msgs_generate_messages_lisp" />
+      <config projectName="map" targetName="dynamic_reconfigure_generate_messages_eus" />
+      <config projectName="map" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="map" targetName="tf2_msgs_generate_messages_lisp" />
+      <config projectName="map" targetName="tf2_msgs_generate_messages_py" />
+      <config projectName="map" targetName="pcl_msgs_generate_messages_nodejs" />
+      <config projectName="map" targetName="sensor_msgs_generate_messages_cpp" />
+      <config projectName="map" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="map" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="map" targetName="nodelet_generate_messages_cpp" />
+      <config projectName="map" targetName="std_msgs_generate_messages_py" />
+      <config projectName="map" targetName="tf2_msgs_generate_messages_eus" />
+      <config projectName="map" targetName="dynamic_reconfigure_generate_messages_lisp" />
+      <config projectName="map" targetName="actionlib_generate_messages_py" />
+      <config projectName="map" targetName="test_cloud2map" />
+      <config projectName="map" targetName="nav_msgs_generate_messages_eus" />
+      <config projectName="map" targetName="pcl_ros_gencfg" />
+      <config projectName="map" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="map" targetName="actionlib_msgs_generate_messages_lisp" />
+      <config projectName="map" targetName="dynamic_reconfigure_generate_messages_cpp" />
+      <config projectName="map" targetName="bond_generate_messages_py" />
+      <config projectName="map" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="map" targetName="test_common_area" />
+      <config projectName="map" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="map" targetName="download_extra_data" />
+      <config projectName="map" targetName="actionlib_generate_messages_cpp" />
+      <config projectName="map" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="map" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="map" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="map" targetName="tf2_msgs_generate_messages_cpp" />
+      <config projectName="map" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="map" targetName="topic_tools_generate_messages_cpp" />
+      <config projectName="map" targetName="std_srvs_generate_messages_py" />
+      <config projectName="map" targetName="bond_generate_messages_cpp" />
+      <config projectName="map" targetName="geometry_msgs_generate_messages_nodejs" />
+      <config projectName="map" targetName="actionlib_msgs_generate_messages_cpp" />
+      <config projectName="map" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="map" targetName="nav_msgs_generate_messages_cpp" />
+      <config projectName="map" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="map" targetName="topic_tools_generate_messages_lisp" />
+      <config projectName="map" targetName="pcl_msgs_generate_messages_lisp" />
+      <config projectName="map" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="map" targetName="nodelet_generate_messages_lisp" />
+      <config projectName="map" targetName="doxygen" />
+      <config projectName="map" targetName="actionlib_generate_messages_lisp" />
+      <config projectName="map" targetName="pcl_msgs_generate_messages_py" />
+      <config projectName="map" targetName="dynamic_reconfigure_gencfg" />
+      <config projectName="map" targetName="topic_tools_generate_messages_py" />
+      <config projectName="map" targetName="std_srvs_generate_messages_nodejs" />
+      <config projectName="map" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="map" targetName="dynamic_reconfigure_generate_messages_py" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="51172397-a14c-4d6c-83e9-aec16afa3052" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/include/map_db_node.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/include/point_cloud.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/point_cloud.cpp" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="map.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/map.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map_db_node.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/include/map_db_node.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="point_cloud.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/point_cloud.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding>
+                <element signature="e#375#413#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/include/simple_3d_to_2d.h" />
+        <option value="$PROJECT_DIR$/sample/sample_3d_to_2d.cpp" />
+        <option value="$PROJECT_DIR$/src/simple_3d_to_2d.cpp" />
+        <option value="$PROJECT_DIR$/src/cloud2map.cpp" />
+        <option value="$PROJECT_DIR$/src/test_cloud2map.cpp" />
+        <option value="$PROJECT_DIR$/include/common_area.h" />
+        <option value="$PROJECT_DIR$/include/common.h" />
+        <option value="$PROJECT_DIR$/include/showPointCloud.h" />
+        <option value="$PROJECT_DIR$/sample/test_common_area.cpp" />
+        <option value="$PROJECT_DIR$/sample/test_cv2grid.cpp" />
+        <option value="$PROJECT_DIR$/include/cvMat2GridMap.h" />
+        <option value="$PROJECT_DIR$/sample/test_cloud2map.cpp" />
+        <option value="$PROJECT_DIR$/include/cloud2map.h" />
+        <option value="$PROJECT_DIR$/src/map.cpp" />
+        <option value="$PROJECT_DIR$/include/give_cloud_and_pose_to_cloud.cpp" />
+        <option value="$PROJECT_DIR$/src/point_cloud.cpp" />
+        <option value="$PROJECT_DIR$/include/give_cloud_and_pose_to_cloud.h" />
+        <option value="$PROJECT_DIR$/package.xml" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/include/map_db_node.h" />
+        <option value="$PROJECT_DIR$/include/point_cloud.h" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1856" />
+    <option name="y" value="-11" />
+    <option name="width" value="1857" />
+    <option name="height" value="1092" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="map" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="map" type="47feb1d3:ProjectViewModuleNode" />
+            </path>
+            <path>
+              <item name="map" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="map" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="gtest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="map" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="map" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="map" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="map" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="map" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="map" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="map" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="map" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/localization_ws/src" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/bohuan/catkin_test/src/map/include/common_area.h" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sample" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/include" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.map">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+    </configuration>
+    <configuration name="_catkin_empty_exported_target" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="_catkin_empty_exported_target" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="actionlib_generate_messages_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="actionlib_generate_messages_eus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="actionlib_generate_messages_lisp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="actionlib_generate_messages_nodejs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="actionlib_generate_messages_py" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="actionlib_msgs_generate_messages_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="actionlib_msgs_generate_messages_eus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="actionlib_msgs_generate_messages_lisp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="actionlib_msgs_generate_messages_nodejs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="actionlib_msgs_generate_messages_py" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="bond_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="bond_generate_messages_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="bond_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="bond_generate_messages_eus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="bond_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="bond_generate_messages_lisp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="bond_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="bond_generate_messages_nodejs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="bond_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="bond_generate_messages_py" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="clean_test_results" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="clean_test_results" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="download_extra_data" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="download_extra_data" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="doxygen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="doxygen" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="dynamic_reconfigure_gencfg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="dynamic_reconfigure_gencfg" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="dynamic_reconfigure_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="dynamic_reconfigure_generate_messages_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="dynamic_reconfigure_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="dynamic_reconfigure_generate_messages_eus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="dynamic_reconfigure_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="dynamic_reconfigure_generate_messages_lisp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="dynamic_reconfigure_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="dynamic_reconfigure_generate_messages_nodejs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="dynamic_reconfigure_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="dynamic_reconfigure_generate_messages_py" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="geometry_msgs_generate_messages_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="geometry_msgs_generate_messages_eus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="geometry_msgs_generate_messages_lisp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="geometry_msgs_generate_messages_nodejs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="geometry_msgs_generate_messages_py" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="map" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="map" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="map">
+      <envs />
+    </configuration>
+    <configuration name="nav_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="nav_msgs_generate_messages_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="nav_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="nav_msgs_generate_messages_eus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="nav_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="nav_msgs_generate_messages_lisp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="nav_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="nav_msgs_generate_messages_nodejs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="nav_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="nav_msgs_generate_messages_py" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="nodelet_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="nodelet_generate_messages_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="nodelet_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="nodelet_generate_messages_eus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="nodelet_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="nodelet_generate_messages_lisp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="nodelet_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="nodelet_generate_messages_nodejs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="nodelet_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="nodelet_generate_messages_py" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="pcl_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="pcl_msgs_generate_messages_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="pcl_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="pcl_msgs_generate_messages_eus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="pcl_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="pcl_msgs_generate_messages_lisp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="pcl_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="pcl_msgs_generate_messages_nodejs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="pcl_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="pcl_msgs_generate_messages_py" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="pcl_ros_gencfg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="pcl_ros_gencfg" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="roscpp_generate_messages_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="roscpp_generate_messages_eus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="roscpp_generate_messages_lisp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="roscpp_generate_messages_nodejs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="roscpp_generate_messages_py" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="rosgraph_msgs_generate_messages_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="rosgraph_msgs_generate_messages_eus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="rosgraph_msgs_generate_messages_lisp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="rosgraph_msgs_generate_messages_nodejs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="rosgraph_msgs_generate_messages_py" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="run_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="run_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="sensor_msgs_generate_messages_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="sensor_msgs_generate_messages_eus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="sensor_msgs_generate_messages_lisp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="sensor_msgs_generate_messages_nodejs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="sensor_msgs_generate_messages_py" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="std_msgs_generate_messages_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="std_msgs_generate_messages_eus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="std_msgs_generate_messages_lisp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="std_msgs_generate_messages_nodejs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="std_msgs_generate_messages_py" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="std_srvs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="std_srvs_generate_messages_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="std_srvs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="std_srvs_generate_messages_eus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="std_srvs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="std_srvs_generate_messages_lisp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="std_srvs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="std_srvs_generate_messages_nodejs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="std_srvs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="std_srvs_generate_messages_py" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="test_cloud2map" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="test_cloud2map" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cloud2map">
+      <envs />
+    </configuration>
+    <configuration name="test_common_area" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="test_common_area" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_common_area">
+      <envs />
+    </configuration>
+    <configuration name="test_cv2grid" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="test_cv2grid" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="map" RUN_TARGET_NAME="test_cv2grid">
+      <envs />
+    </configuration>
+    <configuration name="tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="tests" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf2_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="tf2_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf2_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="tf2_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf2_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="tf2_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf2_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="tf2_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf2_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="tf2_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="tf_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="tf_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="tf_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="tf_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="tf_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="topic_tools_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="topic_tools_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="topic_tools_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="topic_tools_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="topic_tools_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="topic_tools_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="topic_tools_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="topic_tools_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="topic_tools_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="map" TARGET_NAME="topic_tools_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <list size="95">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application._catkin_empty_exported_target" />
+      <item index="2" class="java.lang.String" itemvalue="Application.actionlib_generate_messages_cpp" />
+      <item index="3" class="java.lang.String" itemvalue="Application.actionlib_generate_messages_eus" />
+      <item index="4" class="java.lang.String" itemvalue="Application.actionlib_generate_messages_lisp" />
+      <item index="5" class="java.lang.String" itemvalue="Application.actionlib_generate_messages_nodejs" />
+      <item index="6" class="java.lang.String" itemvalue="Application.actionlib_generate_messages_py" />
+      <item index="7" class="java.lang.String" itemvalue="Application.actionlib_msgs_generate_messages_cpp" />
+      <item index="8" class="java.lang.String" itemvalue="Application.actionlib_msgs_generate_messages_eus" />
+      <item index="9" class="java.lang.String" itemvalue="Application.actionlib_msgs_generate_messages_lisp" />
+      <item index="10" class="java.lang.String" itemvalue="Application.actionlib_msgs_generate_messages_nodejs" />
+      <item index="11" class="java.lang.String" itemvalue="Application.actionlib_msgs_generate_messages_py" />
+      <item index="12" class="java.lang.String" itemvalue="Application.bond_generate_messages_cpp" />
+      <item index="13" class="java.lang.String" itemvalue="Application.bond_generate_messages_eus" />
+      <item index="14" class="java.lang.String" itemvalue="Application.bond_generate_messages_lisp" />
+      <item index="15" class="java.lang.String" itemvalue="Application.bond_generate_messages_nodejs" />
+      <item index="16" class="java.lang.String" itemvalue="Application.bond_generate_messages_py" />
+      <item index="17" class="java.lang.String" itemvalue="Application.clean_test_results" />
+      <item index="18" class="java.lang.String" itemvalue="Application.download_extra_data" />
+      <item index="19" class="java.lang.String" itemvalue="Application.doxygen" />
+      <item index="20" class="java.lang.String" itemvalue="Application.dynamic_reconfigure_gencfg" />
+      <item index="21" class="java.lang.String" itemvalue="Application.dynamic_reconfigure_generate_messages_cpp" />
+      <item index="22" class="java.lang.String" itemvalue="Application.dynamic_reconfigure_generate_messages_eus" />
+      <item index="23" class="java.lang.String" itemvalue="Application.dynamic_reconfigure_generate_messages_lisp" />
+      <item index="24" class="java.lang.String" itemvalue="Application.dynamic_reconfigure_generate_messages_nodejs" />
+      <item index="25" class="java.lang.String" itemvalue="Application.dynamic_reconfigure_generate_messages_py" />
+      <item index="26" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_cpp" />
+      <item index="27" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_eus" />
+      <item index="28" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_lisp" />
+      <item index="29" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_nodejs" />
+      <item index="30" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_py" />
+      <item index="31" class="java.lang.String" itemvalue="Application.map" />
+      <item index="32" class="java.lang.String" itemvalue="Application.nav_msgs_generate_messages_cpp" />
+      <item index="33" class="java.lang.String" itemvalue="Application.nav_msgs_generate_messages_eus" />
+      <item index="34" class="java.lang.String" itemvalue="Application.nav_msgs_generate_messages_lisp" />
+      <item index="35" class="java.lang.String" itemvalue="Application.nav_msgs_generate_messages_nodejs" />
+      <item index="36" class="java.lang.String" itemvalue="Application.nav_msgs_generate_messages_py" />
+      <item index="37" class="java.lang.String" itemvalue="Application.nodelet_generate_messages_cpp" />
+      <item index="38" class="java.lang.String" itemvalue="Application.nodelet_generate_messages_eus" />
+      <item index="39" class="java.lang.String" itemvalue="Application.nodelet_generate_messages_lisp" />
+      <item index="40" class="java.lang.String" itemvalue="Application.nodelet_generate_messages_nodejs" />
+      <item index="41" class="java.lang.String" itemvalue="Application.nodelet_generate_messages_py" />
+      <item index="42" class="java.lang.String" itemvalue="Application.pcl_msgs_generate_messages_cpp" />
+      <item index="43" class="java.lang.String" itemvalue="Application.pcl_msgs_generate_messages_eus" />
+      <item index="44" class="java.lang.String" itemvalue="Application.pcl_msgs_generate_messages_lisp" />
+      <item index="45" class="java.lang.String" itemvalue="Application.pcl_msgs_generate_messages_nodejs" />
+      <item index="46" class="java.lang.String" itemvalue="Application.pcl_msgs_generate_messages_py" />
+      <item index="47" class="java.lang.String" itemvalue="Application.pcl_ros_gencfg" />
+      <item index="48" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_cpp" />
+      <item index="49" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_eus" />
+      <item index="50" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_lisp" />
+      <item index="51" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_nodejs" />
+      <item index="52" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_py" />
+      <item index="53" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_cpp" />
+      <item index="54" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_eus" />
+      <item index="55" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_lisp" />
+      <item index="56" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_nodejs" />
+      <item index="57" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_py" />
+      <item index="58" class="java.lang.String" itemvalue="Application.run_tests" />
+      <item index="59" class="java.lang.String" itemvalue="Application.sensor_msgs_generate_messages_cpp" />
+      <item index="60" class="java.lang.String" itemvalue="Application.sensor_msgs_generate_messages_eus" />
+      <item index="61" class="java.lang.String" itemvalue="Application.sensor_msgs_generate_messages_lisp" />
+      <item index="62" class="java.lang.String" itemvalue="Application.sensor_msgs_generate_messages_nodejs" />
+      <item index="63" class="java.lang.String" itemvalue="Application.sensor_msgs_generate_messages_py" />
+      <item index="64" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_cpp" />
+      <item index="65" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_eus" />
+      <item index="66" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_lisp" />
+      <item index="67" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_nodejs" />
+      <item index="68" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_py" />
+      <item index="69" class="java.lang.String" itemvalue="Application.std_srvs_generate_messages_cpp" />
+      <item index="70" class="java.lang.String" itemvalue="Application.std_srvs_generate_messages_eus" />
+      <item index="71" class="java.lang.String" itemvalue="Application.std_srvs_generate_messages_lisp" />
+      <item index="72" class="java.lang.String" itemvalue="Application.std_srvs_generate_messages_nodejs" />
+      <item index="73" class="java.lang.String" itemvalue="Application.std_srvs_generate_messages_py" />
+      <item index="74" class="java.lang.String" itemvalue="Application.test_cloud2map" />
+      <item index="75" class="java.lang.String" itemvalue="Application.test_common_area" />
+      <item index="76" class="java.lang.String" itemvalue="Application.test_cv2grid" />
+      <item index="77" class="java.lang.String" itemvalue="Application.tests" />
+      <item index="78" class="java.lang.String" itemvalue="Application.tf2_msgs_generate_messages_cpp" />
+      <item index="79" class="java.lang.String" itemvalue="Application.tf2_msgs_generate_messages_eus" />
+      <item index="80" class="java.lang.String" itemvalue="Application.tf2_msgs_generate_messages_lisp" />
+      <item index="81" class="java.lang.String" itemvalue="Application.tf2_msgs_generate_messages_nodejs" />
+      <item index="82" class="java.lang.String" itemvalue="Application.tf2_msgs_generate_messages_py" />
+      <item index="83" class="java.lang.String" itemvalue="Application.tf_generate_messages_cpp" />
+      <item index="84" class="java.lang.String" itemvalue="Application.tf_generate_messages_eus" />
+      <item index="85" class="java.lang.String" itemvalue="Application.tf_generate_messages_lisp" />
+      <item index="86" class="java.lang.String" itemvalue="Application.tf_generate_messages_nodejs" />
+      <item index="87" class="java.lang.String" itemvalue="Application.tf_generate_messages_py" />
+      <item index="88" class="java.lang.String" itemvalue="Application.topic_tools_generate_messages_cpp" />
+      <item index="89" class="java.lang.String" itemvalue="Application.topic_tools_generate_messages_eus" />
+      <item index="90" class="java.lang.String" itemvalue="Application.topic_tools_generate_messages_lisp" />
+      <item index="91" class="java.lang.String" itemvalue="Application.topic_tools_generate_messages_nodejs" />
+      <item index="92" class="java.lang.String" itemvalue="Application.topic_tools_generate_messages_py" />
+      <item index="93" class="java.lang.String" itemvalue="Application.gtest" />
+      <item index="94" class="java.lang.String" itemvalue="Application.gtest_main" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51172397-a14c-4d6c-83e9-aec16afa3052" name="Default" comment="" />
+      <created>1513168811454</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1513168811454</updated>
+      <workItem from="1513168812502" duration="39575000" />
+      <workItem from="1513664234902" duration="5132000" />
+      <workItem from="1513671905153" duration="299000" />
+      <workItem from="1513672335808" duration="120368000" />
+      <workItem from="1513958762725" duration="8112000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="173486000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1856" y="-11" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18814017" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299389" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299389" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/map.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/cloud2map.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2898">
+          <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+          <folding>
+            <element signature="e#5680#5721#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/map.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8910">
+          <caret line="495" column="12" lean-forward="false" selection-start-line="495" selection-start-column="12" selection-end-line="495" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/map.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/simple_3d_to_2d.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/map.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8082">
+          <caret line="449" column="6" lean-forward="false" selection-start-line="449" selection-start-column="6" selection-end-line="449" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/jsoncpp/json/json.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/cloud2map.cpp" />
+    <entry file="file:///opt/ros/kinetic/include/nav_msgs/OccupancyGrid.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="47" column="40" lean-forward="false" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/pcl-1.7/pcl/features/normal_3d.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="285" column="6" lean-forward="false" selection-start-line="285" selection-start-column="6" selection-end-line="285" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/pcl-1.7/pcl/search/kdtree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="78" column="18" lean-forward="true" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cloud2map.cpp" />
+    <entry file="file:///opt/ros/kinetic/include/opencv-3.2.0-dev/opencv2/core/mat.inl.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="747" column="22" lean-forward="false" selection-start-line="747" selection-start-column="22" selection-end-line="747" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/sample_3d_to_2d.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="39" column="28" lean-forward="false" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/simple_3d_to_2d.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simple_3d_to_2d.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/pcl-1.7/pcl/common/transforms.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="213" column="34" lean-forward="false" selection-start-line="213" selection-start-column="34" selection-end-line="213" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/common_area.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="295" column="0" lean-forward="false" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+          <folding>
+            <element signature="e#94#113#0" expanded="false" />
+            <element signature="e#1017#2181#0" expanded="false" />
+            <element signature="e#8014#8058#0" expanded="false" />
+            <element signature="e#8743#9020#0" expanded="false" />
+            <element signature="e#9029#10143#0" expanded="false" />
+            <element signature="e#10942#11209#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/showPointCloud.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="56" column="16" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+          <folding>
+            <element signature="e#100#138#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/test_common_area.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <element signature="e#40#59#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/opencv-3.2.0-dev/opencv2/imgcodecs.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="239" column="63" lean-forward="true" selection-start-line="239" selection-start-column="63" selection-end-line="239" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/opencv-3.2.0-dev/opencv2/imgcodecs/imgcodecs_c.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="79" column="3" lean-forward="false" selection-start-line="79" selection-start-column="3" selection-end-line="79" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/test_cv2grid.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/common.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="120" column="7" lean-forward="false" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="7" />
+          <folding>
+            <element signature="e#1250#1589#0" expanded="false" />
+            <element signature="e#1594#1919#0" expanded="false" />
+            <element signature="e#1924#2263#0" expanded="false" />
+            <element signature="e#2268#2581#0" expanded="false" />
+            <element signature="e#2586#2983#0" expanded="false" />
+            <element signature="e#2988#3382#0" expanded="false" />
+            <element signature="e#3387#3769#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/cvMat2GridMap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="701">
+          <caret line="66" column="85" lean-forward="false" selection-start-line="66" selection-start-column="85" selection-end-line="66" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/test_cloud2map.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="39" column="56" lean-forward="false" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/cloud2map.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+          <folding>
+            <element signature="e#5680#5721#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/kinetic/share/genmsg/cmake/genmsg-extras.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="196" column="0" lean-forward="false" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/give_cloud_and_pose_to_cloud.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/point_cloud.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#325#349#0" expanded="false" />
+            <element signature="e#624#636#0" expanded="false" />
+            <element signature="e#7844#7856#0" expanded="false" />
+            <element signature="e#15473#15485#0" expanded="false" />
+            <element signature="e#19664#19693#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/give_cloud_and_pose_to_cloud.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/point_cloud.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#375#413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/map.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/map_db_node.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
