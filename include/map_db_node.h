@@ -23,6 +23,7 @@
 #include <tf/transform_datatypes.h>
 #include <tf/transform_broadcaster.h>
 #include <nav_msgs/Odometry.h>
+#include <geometry_msgs/PoseWithCovarianceStamped.h>
 
 #include <tf_conversions/tf_eigen.h>
 #include <Eigen/Dense>
@@ -128,6 +129,15 @@ public:
             ROS_ERROR_STREAM("MAP FILE ERROR");
             exit(0);
         }
+    }
+
+
+    void pos2cloud(const geometry_msgs::PoseWithCovarianceStamped &pose, sensor_msgs::PointCloud2 &cloud)
+    {
+        geometry_msgs::PoseStamped mapLoc;
+        mapLoc.header = pose.header;
+        mapLoc.pose = pose.pose.pose;
+        retrieve(mapLoc, cloud);
     }
 
     bool retrieve(const geometry_msgs::PoseStamped &mapLoc,

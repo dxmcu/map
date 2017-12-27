@@ -342,10 +342,8 @@ private:
     {
         auto &node = nodes_info_;
         cv::Point2f pose;
-        pose.x = -1000000;
-        pose.y = -1000000;
-
-
+        pose.x = pose_.pose.pose.position.x;
+        pose.y = pose_.pose.pose.position.y;
 
 
 
@@ -369,6 +367,7 @@ private:
 #endif
             if (contour_ptr && cv::pointPolygonTest(*contour_ptr, pose, false) == 1)
             {
+                //如果在公共区域，则切换地图。
                 break;
             }
 
@@ -389,7 +388,7 @@ private:
         return 0;
     };
 
-    void transforPose(const Eigen::Matrix4d & trans)
+    void transforPose(Eigen::Matrix4d trans)
     {
         Eigen::Isometry3d I = Eigen::Isometry3d::Identity();
         auto x = pose_.pose.pose.orientation.x;
@@ -419,6 +418,7 @@ private:
 
     void publishPose()
     {
+        //发10此，确保发到
         for (int i = 1; i <= 10; ++ i)
         {
             pub_initial_pose_.publish(pose_);
@@ -513,6 +513,9 @@ public:
             //TODO 也就是预处理就直接保存公共区域即可。
 
             transforPose(last_trans.inverse());
+            //发布一次新的地图
+
+
             publishPose();  //因为地图坐标变换了，所以要发布位姿和地图。
 
             auto &edge = map_[cur_node_id_][paths_[i]];
