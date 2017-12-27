@@ -115,22 +115,35 @@ file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/bohuan/catkin_test/
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/bohuan/catkin_test/src/map/cmake-build-debug/catkin_generated/installspace/map.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/map_core/srv" TYPE FILE FILES "/home/bohuan/catkin_test/src/map/srv/LocalMapRetrieve.srv")
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/map/cmake" TYPE FILE FILES
-    "/home/bohuan/catkin_test/src/map/cmake-build-debug/catkin_generated/installspace/mapConfig.cmake"
-    "/home/bohuan/catkin_test/src/map/cmake-build-debug/catkin_generated/installspace/mapConfig-version.cmake"
-    )
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/map_core/cmake" TYPE FILE FILES "/home/bohuan/catkin_test/src/map/cmake-build-debug/catkin_generated/installspace/map_core-msg-paths.cmake")
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/map" TYPE FILE FILES "/home/bohuan/catkin_test/src/map/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/bohuan/catkin_test/src/map/cmake-build-debug/devel/include/map_core")
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/map/srv" TYPE FILE FILES "/home/bohuan/catkin_test/src/map/srv/LocalMapRetrieve.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/bohuan/catkin_test/src/map/cmake-build-debug/devel/share/roseus/ros/map_core")
+endif()
+
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/bohuan/catkin_test/src/map/cmake-build-debug/devel/share/common-lisp/ros/map_core")
+endif()
+
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/bohuan/catkin_test/src/map/cmake-build-debug/devel/share/gennodejs/ros/map_core")
+endif()
+
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/bohuan/catkin_test/src/map/cmake-build-debug/devel/lib/python2.7/dist-packages/map_core")
+endif()
+
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/bohuan/catkin_test/src/map/cmake-build-debug/devel/lib/python2.7/dist-packages/map_core")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

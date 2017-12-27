@@ -41,7 +41,7 @@ namespace CommonArea {
 #define CA_UNKNOW -1
 #define CA_NO 100
 #define CA_YES 0
-        CHECK_EQ(og.info.resolution, param::cloud2map::cell_resolution);
+        CHECK_EQ(og.info.resolution, param::cloud2map::cell_resolution, "居然全局参数的分辨率，和读入的分辨率不一样？");
         int dx = (og.info.origin.position.x - origin_x) / param::cloud2map::cell_resolution;
         int dy = (og.info.origin.position.y - origin_y) / param::cloud2map::cell_resolution;
        // pr(dx), pr(dy), pr(origin_x), prln(origin_y);
@@ -54,10 +54,10 @@ namespace CommonArea {
                 int map_x = x + dx;
                 int map_y = y + dy;
 
-                CHECK_GE(map_x, 0);
-                CHECK_GE(map_y, 0);
-                CHECK_LT(map_x, x_cells);
-                CHECK_LT(map_y, y_cells);
+                CHECK_GE(map_x, 0, "栅格地图中的x坐标小于0,出问题, common_area.h");
+                CHECK_GE(map_y, 0, "栅格地图中的y坐标小于0,common_area.h");
+                CHECK_LT(map_x, x_cells, "common_area.h");
+                CHECK_LT(map_y, y_cells, "common_area.h");
                 vis_[map_x][map_y] = true;
                 auto &idx = map.at<uchar>(map_x, map_y);
                 if (tmp == CA_YES)  idx += 100;
@@ -194,8 +194,8 @@ namespace CommonArea {
     //返回值为一个point的vector,size为4.分别为4个坐标。表示一个矩形。
     static  std::vector< geometry_msgs::Point > commonOccupancyGrid(nav_msgs::OccupancyGrid &og1, nav_msgs::OccupancyGrid &og2)
     {
-        CHECK_EQ(og1.info.resolution, og2.info.resolution);
-        CHECK_EQ(og1.info.resolution, param::cloud2map::cell_resolution);
+        CHECK_EQ(og1.info.resolution, og2.info.resolution, "分辨率有问题. common_area.h");
+        CHECK_EQ(og1.info.resolution, param::cloud2map::cell_resolution, "分辨率有问题 common.area.h");
 
         double og1x = og1.info.origin.position.x;
         double og1y = og1.info.origin.position.y;

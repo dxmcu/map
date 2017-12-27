@@ -24,20 +24,20 @@ int main(int argc, char** argv)
     ros::Publisher pub_gridmap2 = nh.advertise<nav_msgs::OccupancyGrid>("gridmap1", 10);
 
     //处理第一个点云
-    cm0.loadPointCloudFromPCL("/home/bohuan/map_data/pcd/2.pcd");
+    cm0.loadPointCloudFromPCL("/home/bohuan/map_data/pcd/0.pcd");
     cm0.PCL2Map();
     auto og1 = cm0.occupancy_grid();   //得到点云1的栅格地图
-    spc0 = new ShowPointCloud_LPM("point_cloud_topic0", "/home/bohuan/map_data/vtk/2.vtk" , nh );
+    spc0 = new ShowPointCloud_LPM("point_cloud_topic0", "/home/bohuan/map_data/vtk/0.vtk" , nh );
     spc0->initPointCloud();
 
 
     //读取第二个点云，并处理
-    cm1.loadPointCloudFromPCL("/home/bohuan/map_data/pcd/3.pcd");
-    cm1.transFromPointCloud(param::from3to2()); //根据变换，要先做对齐
+    cm1.loadPointCloudFromPCL("/home/bohuan/map_data/pcd/1.pcd");
+    cm1.transFromPointCloud(param::from1to0()); //根据变换，要先做对齐
     cm1.PCL2Map();
     auto og2 = cm1.occupancy_grid();   //得到点云2的栅格地图
-    spc1 = new ShowPointCloud_LPM("point_cloud_topic1", "/home/bohuan/map_data/vtk/3.vtk" , nh );
-    spc1->transform(param::from3to2());     //坐标变换一下
+    spc1 = new ShowPointCloud_LPM("point_cloud_topic1", "/home/bohuan/map_data/vtk/1.vtk" , nh );
+    spc1->transform(param::from1to0());     //坐标变换一下
     spc1->initPointCloud();
 
 

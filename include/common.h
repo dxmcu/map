@@ -14,11 +14,11 @@
 #define pr(x)   std::cout<<#x<<"="<<x<<","
 #define prln(x) std::cout<<#x<<"="<<x<<std::endl
 
-#define DIE std::cout<<"something wrong!!!"<<std::endl;exit(0);
-#define CHECK_EQ(x,y) if(!(x==y)){pr(x), prln(y); DIE;}
-#define CHECK_GE(x,y) if(!(x>=y)){pr(x), prln(y); DIE;}
-#define CHECK_LE(x,y) if(!(x<=y)){pr(x), prln(y); DIE;}
-#define CHECK_LT(x,y) if(!(x<y)) {pr(x), prln(y); DIE;}
+//#define DIE
+#define CHECK_EQ(x,y,z) if(!(x==y)) pr(x), pr(y)<<z, exit(-1);
+#define CHECK_GE(x,y,z) if(!(x>=y)) pr(x), pr(y)<<z, exit(-1);
+#define CHECK_LE(x,y,z) if(!(x<=y)) pr(x), pr(y)<<z, exit(-1);
+#define CHECK_LT(x,y,z) if(!(x<y))  pr(x), pr(y)<<z, exit(-1);
 
 
 
@@ -29,7 +29,7 @@ namespace param
     namespace cloud2map
     {
         //包含所有参数，可以json载入后修改
-        static std::string frame = "map";
+        static std::string frame = "global_frame";
         static double search_radius = 1;
         static double deviation = .78539816339;
         static int buffer = 5;
@@ -237,9 +237,9 @@ public:
 
     std::pair<int, int> point2XY(geometry_msgs::Point point)
     {
-        CHECK_EQ(flag_, 63);
-        CHECK_GE(max_x_, min_x_);
-        CHECK_GE(max_y_, min_y_);
+        CHECK_EQ(flag_, 63, "没有完整的初始化所有信息");
+        CHECK_GE(max_x_, min_x_, "x的最大值小于最小值？");
+        CHECK_GE(max_y_, min_y_, "y的最大值小于最小值？");
 
         std::pair<int, int> ret;
         double tot_x = max_x_ - min_x_ + 1;
@@ -256,9 +256,9 @@ public:
 
     geometry_msgs::Point XY2point(int x, int y)
     {
-        CHECK_EQ(flag_, 63);
-        CHECK_GE(max_x_, min_x_);
-        CHECK_GE(max_y_, min_y_);
+        CHECK_EQ(flag_, 63, "没有完整的初始化所有信息, common.h");
+        CHECK_GE(max_x_, min_x_, "x的最大值小于最小值？ commom.h");
+        CHECK_GE(max_y_, min_y_, "y的最大值小于最小值？ common.h");
 
         geometry_msgs::Point ret;
         ret.x = (max_x_ - min_x_) / X_ * x + min_x_;
@@ -269,9 +269,9 @@ public:
 
     bool isVaild(geometry_msgs::Point point)
     {
-        CHECK_EQ(flag_, 63);
-        CHECK_GE(max_x_, min_x_);
-        CHECK_GE(max_y_, min_y_);
+        CHECK_EQ(flag_, 63, "没有完整的初始化所有信息 common.h");
+        CHECK_GE(max_x_, min_x_, "x的最大值小于最小值？ common.h");
+        CHECK_GE(max_y_, min_y_, "y的最大值小于最小值？ common.h");
 
         if ( point.x > max_x_ )  return false;
         if ( point.x < min_x_ )  return false;

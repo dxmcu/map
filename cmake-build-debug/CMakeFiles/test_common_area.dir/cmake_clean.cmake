@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_common_area.dir/sample/test_common_area.cpp.o"
-  "devel/lib/map/test_common_area.pdb"
-  "devel/lib/map/test_common_area"
+  "devel/lib/map_core/test_common_area.pdb"
+  "devel/lib/map_core/test_common_area"
 )
 
 # Per-language clean rules from dependency scanning.

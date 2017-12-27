@@ -2,8 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/map.dir/src/map.cpp.o"
   "CMakeFiles/map.dir/src/simple_3d_to_2d.cpp.o"
   "CMakeFiles/map.dir/src/point_cloud.cpp.o"
-  "devel/lib/map/map.pdb"
-  "devel/lib/map/map"
+  "devel/lib/map_core/map.pdb"
+  "devel/lib/map_core/map"
 )
 
 # Per-language clean rules from dependency scanning.

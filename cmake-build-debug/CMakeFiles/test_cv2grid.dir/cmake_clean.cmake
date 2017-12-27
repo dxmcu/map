@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_cv2grid.dir/sample/test_cv2grid.cpp.o"
-  "devel/lib/map/test_cv2grid.pdb"
-  "devel/lib/map/test_cv2grid"
+  "devel/lib/map_core/test_cv2grid.pdb"
+  "devel/lib/map_core/test_cv2grid"
 )
 
 # Per-language clean rules from dependency scanning.

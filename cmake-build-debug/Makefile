@@ -80,6 +80,17 @@ install/local/fast: preinstall/fast
 	/home/bohuan/clion-2017.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/bohuan/clion-2017.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -91,6 +102,17 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/home/bohuan/clion-2017.3/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/bohuan/clion-2017.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target test
 test:
@@ -112,28 +134,6 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/bohuan/clion-2017.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/bohuan/clion-2017.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -166,6 +166,71 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named map
+
+# Build rule for target.
+map: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map
+.PHONY : map
+
+# fast build rule for target.
+map/fast:
+	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/build
+.PHONY : map/fast
+
+#=============================================================================
+# Target rules for targets named test_cloud2map
+
+# Build rule for target.
+test_cloud2map: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_cloud2map
+.PHONY : test_cloud2map
+
+# fast build rule for target.
+test_cloud2map/fast:
+	$(MAKE) -f CMakeFiles/test_cloud2map.dir/build.make CMakeFiles/test_cloud2map.dir/build
+.PHONY : test_cloud2map/fast
+
+#=============================================================================
+# Target rules for targets named test_map_db_node
+
+# Build rule for target.
+test_map_db_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_map_db_node
+.PHONY : test_map_db_node
+
+# fast build rule for target.
+test_map_db_node/fast:
+	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/build
+.PHONY : test_map_db_node/fast
+
+#=============================================================================
+# Target rules for targets named map_core_gennodejs
+
+# Build rule for target.
+map_core_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map_core_gennodejs
+.PHONY : map_core_gennodejs
+
+# fast build rule for target.
+map_core_gennodejs/fast:
+	$(MAKE) -f CMakeFiles/map_core_gennodejs.dir/build.make CMakeFiles/map_core_gennodejs.dir/build
+.PHONY : map_core_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named map_core_generate_messages_nodejs
+
+# Build rule for target.
+map_core_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map_core_generate_messages_nodejs
+.PHONY : map_core_generate_messages_nodejs
+
+# fast build rule for target.
+map_core_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/map_core_generate_messages_nodejs.dir/build.make CMakeFiles/map_core_generate_messages_nodejs.dir/build
+.PHONY : map_core_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named download_extra_data
@@ -363,6 +428,19 @@ nodelet_generate_messages_nodejs/fast:
 .PHONY : nodelet_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named map_core_generate_messages_py
+
+# Build rule for target.
+map_core_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map_core_generate_messages_py
+.PHONY : map_core_generate_messages_py
+
+# fast build rule for target.
+map_core_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/map_core_generate_messages_py.dir/build.make CMakeFiles/map_core_generate_messages_py.dir/build
+.PHONY : map_core_generate_messages_py/fast
+
+#=============================================================================
 # Target rules for targets named pcl_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -454,19 +532,6 @@ dynamic_reconfigure_generate_messages_eus/fast:
 .PHONY : dynamic_reconfigure_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named roscpp_generate_messages_cpp
-
-# Build rule for target.
-roscpp_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f CMakeFiles/roscpp_generate_messages_cpp.dir/build.make CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-#=============================================================================
 # Target rules for targets named nodelet_generate_messages_py
 
 # Build rule for target.
@@ -478,19 +543,6 @@ nodelet_generate_messages_py: cmake_check_build_system
 nodelet_generate_messages_py/fast:
 	$(MAKE) -f CMakeFiles/nodelet_generate_messages_py.dir/build.make CMakeFiles/nodelet_generate_messages_py.dir/build
 .PHONY : nodelet_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named map
-
-# Build rule for target.
-map: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 map
-.PHONY : map
-
-# fast build rule for target.
-map/fast:
-	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/build
-.PHONY : map/fast
 
 #=============================================================================
 # Target rules for targets named clean_test_results
@@ -530,6 +582,19 @@ std_msgs_generate_messages_nodejs: cmake_check_build_system
 std_msgs_generate_messages_nodejs/fast:
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named map_core_generate_messages_cpp
+
+# Build rule for target.
+map_core_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map_core_generate_messages_cpp
+.PHONY : map_core_generate_messages_cpp
+
+# fast build rule for target.
+map_core_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/map_core_generate_messages_cpp.dir/build.make CMakeFiles/map_core_generate_messages_cpp.dir/build
+.PHONY : map_core_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named _catkin_empty_exported_target
@@ -714,6 +779,45 @@ nodelet_generate_messages_lisp/fast:
 .PHONY : nodelet_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named std_msgs_generate_messages_lisp
+
+# Build rule for target.
+std_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named test_cv2grid
+
+# Build rule for target.
+test_cv2grid: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_cv2grid
+.PHONY : test_cv2grid
+
+# fast build rule for target.
+test_cv2grid/fast:
+	$(MAKE) -f CMakeFiles/test_cv2grid.dir/build.make CMakeFiles/test_cv2grid.dir/build
+.PHONY : test_cv2grid/fast
+
+#=============================================================================
+# Target rules for targets named map_core_geneus
+
+# Build rule for target.
+map_core_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map_core_geneus
+.PHONY : map_core_geneus
+
+# fast build rule for target.
+map_core_geneus/fast:
+	$(MAKE) -f CMakeFiles/map_core_geneus.dir/build.make CMakeFiles/map_core_geneus.dir/build
+.PHONY : map_core_geneus/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_py
 
 # Build rule for target.
@@ -764,6 +868,45 @@ tf_generate_messages_lisp: cmake_check_build_system
 tf_generate_messages_lisp/fast:
 	$(MAKE) -f CMakeFiles/tf_generate_messages_lisp.dir/build.make CMakeFiles/tf_generate_messages_lisp.dir/build
 .PHONY : tf_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named test_common_area
+
+# Build rule for target.
+test_common_area: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_common_area
+.PHONY : test_common_area
+
+# fast build rule for target.
+test_common_area/fast:
+	$(MAKE) -f CMakeFiles/test_common_area.dir/build.make CMakeFiles/test_common_area.dir/build
+.PHONY : test_common_area/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_eus
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_py
+
+# Build rule for target.
+std_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named nav_msgs_generate_messages_py
@@ -974,17 +1117,17 @@ std_srvs_generate_messages_cpp/fast:
 .PHONY : std_srvs_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named test_cloud2map
+# Target rules for targets named map_core_generate_messages
 
 # Build rule for target.
-test_cloud2map: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_cloud2map
-.PHONY : test_cloud2map
+map_core_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map_core_generate_messages
+.PHONY : map_core_generate_messages
 
 # fast build rule for target.
-test_cloud2map/fast:
-	$(MAKE) -f CMakeFiles/test_cloud2map.dir/build.make CMakeFiles/test_cloud2map.dir/build
-.PHONY : test_cloud2map/fast
+map_core_generate_messages/fast:
+	$(MAKE) -f CMakeFiles/map_core_generate_messages.dir/build.make CMakeFiles/map_core_generate_messages.dir/build
+.PHONY : map_core_generate_messages/fast
 
 #=============================================================================
 # Target rules for targets named topic_tools_generate_messages_lisp
@@ -1117,19 +1260,6 @@ actionlib_generate_messages_eus/fast:
 .PHONY : actionlib_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named test_cv2grid
-
-# Build rule for target.
-test_cv2grid: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_cv2grid
-.PHONY : test_cv2grid
-
-# fast build rule for target.
-test_cv2grid/fast:
-	$(MAKE) -f CMakeFiles/test_cv2grid.dir/build.make CMakeFiles/test_cv2grid.dir/build
-.PHONY : test_cv2grid/fast
-
-#=============================================================================
 # Target rules for targets named actionlib_generate_messages_lisp
 
 # Build rule for target.
@@ -1154,6 +1284,19 @@ actionlib_msgs_generate_messages_eus: cmake_check_build_system
 actionlib_msgs_generate_messages_eus/fast:
 	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
 .PHONY : actionlib_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named map_core_generate_messages_lisp
+
+# Build rule for target.
+map_core_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map_core_generate_messages_lisp
+.PHONY : map_core_generate_messages_lisp
+
+# fast build rule for target.
+map_core_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/map_core_generate_messages_lisp.dir/build.make CMakeFiles/map_core_generate_messages_lisp.dir/build
+.PHONY : map_core_generate_messages_lisp/fast
 
 #=============================================================================
 # Target rules for targets named dynamic_reconfigure_generate_messages_py
@@ -1221,43 +1364,17 @@ tf2_msgs_generate_messages_cpp/fast:
 .PHONY : tf2_msgs_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_eus
+# Target rules for targets named map_core_genlisp
 
 # Build rule for target.
-rosgraph_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
-.PHONY : rosgraph_msgs_generate_messages_eus
+map_core_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map_core_genlisp
+.PHONY : map_core_genlisp
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_py
-
-# Build rule for target.
-std_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named test_common_area
-
-# Build rule for target.
-test_common_area: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_common_area
-.PHONY : test_common_area
-
-# fast build rule for target.
-test_common_area/fast:
-	$(MAKE) -f CMakeFiles/test_common_area.dir/build.make CMakeFiles/test_common_area.dir/build
-.PHONY : test_common_area/fast
+map_core_genlisp/fast:
+	$(MAKE) -f CMakeFiles/map_core_genlisp.dir/build.make CMakeFiles/map_core_genlisp.dir/build
+.PHONY : map_core_genlisp/fast
 
 #=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_lisp
@@ -1351,17 +1468,69 @@ nav_msgs_generate_messages_nodejs/fast:
 .PHONY : nav_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named std_msgs_generate_messages_lisp
+# Target rules for targets named roscpp_generate_messages_cpp
 
 # Build rule for target.
-std_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
-.PHONY : std_msgs_generate_messages_lisp
+roscpp_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
+.PHONY : roscpp_generate_messages_cpp
 
 # fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
+roscpp_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_cpp.dir/build.make CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named _map_core_generate_messages_check_deps_LocalMapRetrieve
+
+# Build rule for target.
+_map_core_generate_messages_check_deps_LocalMapRetrieve: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _map_core_generate_messages_check_deps_LocalMapRetrieve
+.PHONY : _map_core_generate_messages_check_deps_LocalMapRetrieve
+
+# fast build rule for target.
+_map_core_generate_messages_check_deps_LocalMapRetrieve/fast:
+	$(MAKE) -f CMakeFiles/_map_core_generate_messages_check_deps_LocalMapRetrieve.dir/build.make CMakeFiles/_map_core_generate_messages_check_deps_LocalMapRetrieve.dir/build
+.PHONY : _map_core_generate_messages_check_deps_LocalMapRetrieve/fast
+
+#=============================================================================
+# Target rules for targets named map_core_gencpp
+
+# Build rule for target.
+map_core_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map_core_gencpp
+.PHONY : map_core_gencpp
+
+# fast build rule for target.
+map_core_gencpp/fast:
+	$(MAKE) -f CMakeFiles/map_core_gencpp.dir/build.make CMakeFiles/map_core_gencpp.dir/build
+.PHONY : map_core_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named map_core_genpy
+
+# Build rule for target.
+map_core_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map_core_genpy
+.PHONY : map_core_genpy
+
+# fast build rule for target.
+map_core_genpy/fast:
+	$(MAKE) -f CMakeFiles/map_core_genpy.dir/build.make CMakeFiles/map_core_genpy.dir/build
+.PHONY : map_core_genpy/fast
+
+#=============================================================================
+# Target rules for targets named map_core_generate_messages_eus
+
+# Build rule for target.
+map_core_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map_core_generate_messages_eus
+.PHONY : map_core_generate_messages_eus
+
+# fast build rule for target.
+map_core_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/map_core_generate_messages_eus.dir/build.make CMakeFiles/map_core_generate_messages_eus.dir/build
+.PHONY : map_core_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named gtest_main
@@ -1470,6 +1639,60 @@ sample/test_cv2grid.cpp.s:
 	$(MAKE) -f CMakeFiles/test_cv2grid.dir/build.make CMakeFiles/test_cv2grid.dir/sample/test_cv2grid.cpp.s
 .PHONY : sample/test_cv2grid.cpp.s
 
+sample/test_map_db_node.o: sample/test_map_db_node.cpp.o
+
+.PHONY : sample/test_map_db_node.o
+
+# target to build an object file
+sample/test_map_db_node.cpp.o:
+	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/sample/test_map_db_node.cpp.o
+.PHONY : sample/test_map_db_node.cpp.o
+
+sample/test_map_db_node.i: sample/test_map_db_node.cpp.i
+
+.PHONY : sample/test_map_db_node.i
+
+# target to preprocess a source file
+sample/test_map_db_node.cpp.i:
+	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/sample/test_map_db_node.cpp.i
+.PHONY : sample/test_map_db_node.cpp.i
+
+sample/test_map_db_node.s: sample/test_map_db_node.cpp.s
+
+.PHONY : sample/test_map_db_node.s
+
+# target to generate assembly for a file
+sample/test_map_db_node.cpp.s:
+	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/sample/test_map_db_node.cpp.s
+.PHONY : sample/test_map_db_node.cpp.s
+
+src/laserutils.o: src/laserutils.cpp.o
+
+.PHONY : src/laserutils.o
+
+# target to build an object file
+src/laserutils.cpp.o:
+	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/laserutils.cpp.o
+.PHONY : src/laserutils.cpp.o
+
+src/laserutils.i: src/laserutils.cpp.i
+
+.PHONY : src/laserutils.i
+
+# target to preprocess a source file
+src/laserutils.cpp.i:
+	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/laserutils.cpp.i
+.PHONY : src/laserutils.cpp.i
+
+src/laserutils.s: src/laserutils.cpp.s
+
+.PHONY : src/laserutils.s
+
+# target to generate assembly for a file
+src/laserutils.cpp.s:
+	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/laserutils.cpp.s
+.PHONY : src/laserutils.cpp.s
+
 src/map.o: src/map.cpp.o
 
 .PHONY : src/map.o
@@ -1504,6 +1727,7 @@ src/point_cloud.o: src/point_cloud.cpp.o
 # target to build an object file
 src/point_cloud.cpp.o:
 	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/src/point_cloud.cpp.o
+	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/point_cloud.cpp.o
 .PHONY : src/point_cloud.cpp.o
 
 src/point_cloud.i: src/point_cloud.cpp.i
@@ -1513,6 +1737,7 @@ src/point_cloud.i: src/point_cloud.cpp.i
 # target to preprocess a source file
 src/point_cloud.cpp.i:
 	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/src/point_cloud.cpp.i
+	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/point_cloud.cpp.i
 .PHONY : src/point_cloud.cpp.i
 
 src/point_cloud.s: src/point_cloud.cpp.s
@@ -1522,6 +1747,7 @@ src/point_cloud.s: src/point_cloud.cpp.s
 # target to generate assembly for a file
 src/point_cloud.cpp.s:
 	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/src/point_cloud.cpp.s
+	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/point_cloud.cpp.s
 .PHONY : src/point_cloud.cpp.s
 
 src/simple_3d_to_2d.o: src/simple_3d_to_2d.cpp.o
@@ -1559,6 +1785,12 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... rebuild_cache"
+	@echo "... map"
+	@echo "... test_cloud2map"
+	@echo "... test_map_db_node"
+	@echo "... map_core_gennodejs"
+	@echo "... map_core_generate_messages_nodejs"
 	@echo "... download_extra_data"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... actionlib_generate_messages_nodejs"
@@ -1575,6 +1807,7 @@ help:
 	@echo "... bond_generate_messages_eus"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... nodelet_generate_messages_nodejs"
+	@echo "... map_core_generate_messages_py"
 	@echo "... pcl_msgs_generate_messages_nodejs"
 	@echo "... tests"
 	@echo "... std_srvs_generate_messages_nodejs"
@@ -1582,12 +1815,11 @@ help:
 	@echo "... pcl_msgs_generate_messages_py"
 	@echo "... bond_generate_messages_nodejs"
 	@echo "... dynamic_reconfigure_generate_messages_eus"
-	@echo "... roscpp_generate_messages_cpp"
 	@echo "... nodelet_generate_messages_py"
-	@echo "... map"
 	@echo "... clean_test_results"
 	@echo "... nodelet_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... map_core_generate_messages_cpp"
 	@echo "... _catkin_empty_exported_target"
 	@echo "... dynamic_reconfigure_generate_messages_nodejs"
 	@echo "... bond_generate_messages_py"
@@ -1602,10 +1834,17 @@ help:
 	@echo "... pcl_msgs_generate_messages_lisp"
 	@echo "... bond_generate_messages_cpp"
 	@echo "... nodelet_generate_messages_lisp"
+	@echo "... edit_cache"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... test_cv2grid"
+	@echo "... map_core_geneus"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... tf_generate_messages_lisp"
+	@echo "... test_common_area"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... std_msgs_generate_messages_py"
 	@echo "... nav_msgs_generate_messages_py"
 	@echo "... dynamic_reconfigure_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_cpp"
@@ -1624,7 +1863,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... pcl_msgs_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... test_cloud2map"
+	@echo "... map_core_generate_messages"
 	@echo "... topic_tools_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... topic_tools_generate_messages_nodejs"
@@ -1632,21 +1871,18 @@ help:
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... tf_generate_messages_eus"
-	@echo "... rebuild_cache"
 	@echo "... tf_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... actionlib_generate_messages_eus"
-	@echo "... test_cv2grid"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_eus"
+	@echo "... map_core_generate_messages_lisp"
 	@echo "... dynamic_reconfigure_generate_messages_py"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_py"
-	@echo "... test_common_area"
+	@echo "... map_core_genlisp"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_eus"
@@ -1654,8 +1890,11 @@ help:
 	@echo "... nav_msgs_generate_messages_eus"
 	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... edit_cache"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... _map_core_generate_messages_check_deps_LocalMapRetrieve"
+	@echo "... map_core_gencpp"
+	@echo "... map_core_genpy"
+	@echo "... map_core_generate_messages_eus"
 	@echo "... gtest_main"
 	@echo "... gtest"
 	@echo "... sample/test_cloud2map.o"
@@ -1667,6 +1906,12 @@ help:
 	@echo "... sample/test_cv2grid.o"
 	@echo "... sample/test_cv2grid.i"
 	@echo "... sample/test_cv2grid.s"
+	@echo "... sample/test_map_db_node.o"
+	@echo "... sample/test_map_db_node.i"
+	@echo "... sample/test_map_db_node.s"
+	@echo "... src/laserutils.o"
+	@echo "... src/laserutils.i"
+	@echo "... src/laserutils.s"
 	@echo "... src/map.o"
 	@echo "... src/map.i"
 	@echo "... src/map.s"

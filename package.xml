@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>map</name>
+  <name>map_core</name>
   <version>0.0.0</version>
   <description>The map package</description>
 

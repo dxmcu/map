@@ -12,6 +12,7 @@
 -- Using Python nosetests: /usr/bin/nosetests-2.7
 -- catkin 0.7.6
 -- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- map_core: 0 messages, 1 services
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/bohuan/catkin_test/src/map/cmake-build-debug

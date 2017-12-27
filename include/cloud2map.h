@@ -186,9 +186,15 @@ public:
         flag = PCL;
     }
 
+    //TODO 从其他PCL类型直接得到
+    void setPCL()
+    {
+
+    }
+
     void PCL2Map(cv::Rect *rect = NULL) //默认为空指针
     {
-        CHECK_EQ(flag, PCL);
+        CHECK_EQ(flag, PCL, "不是PCL地图，但是调用了PCL转化为栅格地图的函数  cloud2map.h::PLC2Map");
         initGrid();
         pcl::PointCloud<pcl::Normal>::Ptr cloud_normals(new pcl::PointCloud<pcl::Normal>());
         calcSurfaceNormals(pcl_dp_ptr_, cloud_normals);

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_cloud2map.dir/sample/test_cloud2map.cpp.o"
-  "devel/lib/map/test_cloud2map.pdb"
-  "devel/lib/map/test_cloud2map"
+  "devel/lib/map_core/test_cloud2map.pdb"
+  "devel/lib/map_core/test_cloud2map"
 )
 
 # Per-language clean rules from dependency scanning.
