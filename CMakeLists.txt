@@ -109,7 +109,7 @@ target_link_libraries(test_cloud2map ${libpointmatcher_LIBRARIES}
 add_executable(map
   src/map.cpp
  #       include/simple_3d_to_2d.h
-        src/simple_3d_to_2d.cpp
+        #src/simple_3d_to_2d.cpp
         include/common.h
   #      include/cvMat2GridMap.h
         #include/cloud2map.h

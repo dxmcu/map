@@ -1717,9 +1717,6 @@
 			<Option target="map"/>
 			<Option target="test_map_db_node"/>
 		</Unit>
-		<Unit filename="/home/bohuan/catkin_test/src/map/src/simple_3d_to_2d.cpp">
-			<Option target="map"/>
-		</Unit>
 		<Unit filename="/usr/src/gtest/src/gtest-all.cc">
 			<Option target="gtest"/>
 		</Unit>

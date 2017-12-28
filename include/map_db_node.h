@@ -143,7 +143,9 @@ public:
     bool retrieve(const geometry_msgs::PoseStamped &mapLoc,
                                  sensor_msgs::PointCloud2 &res)
     {
+#ifdef DEBUG
         ROS_INFO_STREAM("wait for retrieval...");
+#endif
         PointMatcher<float>::Transformation* rigidTrans;
         rigidTrans = PointMatcher<float>::get().REG(Transformation).create("RigidTransformation");
 
@@ -181,7 +183,9 @@ public:
 
         // rotate the cropped local related to current frame
         PointMatcher<float>::DataPoints localMap = globalBoxFilter->filter(globalMap_); // T_srcToGlobal Boundary
+#ifdef DEBUG
         ROS_INFO_STREAM("localMap points: " << localMap.getNbPoints());
+#endif
 
         Eigen::Quaternionf q_localToGlobal;
         q_localToGlobal.w() = mapLoc.pose.orientation.w; q_localToGlobal.x() = mapLoc.pose.orientation.x;
@@ -214,7 +218,9 @@ public:
         params.clear();
         localMap = localSurfaceNormalFilter->filter(localMap);
 
+#ifdef DEBUG
         ROS_INFO_STREAM("localMap points: " << localMap.getNbPoints());
+#endif
 
         sensor_msgs::PointCloud2 registerdLocalMap;
         registerdLocalMap = PointMatcher_ros::pointMatcherCloudToRosMsg<float>(localMap, "/local_frame", mapLoc.header.stamp);
@@ -222,7 +228,9 @@ public:
 
         res = registerdLocalMap;
 
+#ifdef DEBUG
         ROS_INFO_STREAM("res.pointcloud " << registerdLocalMap.width);
+#endif
 
         return true;
     }

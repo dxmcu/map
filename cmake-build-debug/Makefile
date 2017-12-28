@@ -1750,33 +1750,6 @@ src/point_cloud.cpp.s:
 	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/point_cloud.cpp.s
 .PHONY : src/point_cloud.cpp.s
 
-src/simple_3d_to_2d.o: src/simple_3d_to_2d.cpp.o
-
-.PHONY : src/simple_3d_to_2d.o
-
-# target to build an object file
-src/simple_3d_to_2d.cpp.o:
-	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/src/simple_3d_to_2d.cpp.o
-.PHONY : src/simple_3d_to_2d.cpp.o
-
-src/simple_3d_to_2d.i: src/simple_3d_to_2d.cpp.i
-
-.PHONY : src/simple_3d_to_2d.i
-
-# target to preprocess a source file
-src/simple_3d_to_2d.cpp.i:
-	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/src/simple_3d_to_2d.cpp.i
-.PHONY : src/simple_3d_to_2d.cpp.i
-
-src/simple_3d_to_2d.s: src/simple_3d_to_2d.cpp.s
-
-.PHONY : src/simple_3d_to_2d.s
-
-# target to generate assembly for a file
-src/simple_3d_to_2d.cpp.s:
-	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/src/simple_3d_to_2d.cpp.s
-.PHONY : src/simple_3d_to_2d.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1918,9 +1891,6 @@ help:
 	@echo "... src/point_cloud.o"
 	@echo "... src/point_cloud.i"
 	@echo "... src/point_cloud.s"
-	@echo "... src/simple_3d_to_2d.o"
-	@echo "... src/simple_3d_to_2d.i"
-	@echo "... src/simple_3d_to_2d.s"
 .PHONY : help
 
 

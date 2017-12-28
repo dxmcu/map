@@ -32,7 +32,6 @@
 #include "visualization_msgs/Marker.h"
 
 //debug
-#define DEBUG
 
 namespace junk_map {
 
@@ -111,6 +110,15 @@ private:
     MapDbNode map_db_node_;         //pcd格式，用来显示某区域点，做定位用的。
 
 public:
+
+
+    void pos2cloud(const geometry_msgs::PoseWithCovarianceStamped &pose, sensor_msgs::PointCloud2 &cloud)
+    {
+        geometry_msgs::PoseStamped mapLoc;
+        mapLoc.header = pose.header;
+        mapLoc.pose = pose.pose.pose;
+        retrieve(mapLoc, cloud);
+    }
 
     std::string PCLFile()  const { return file_;   }
 
@@ -218,13 +226,19 @@ public:
 class EdgeInfo
 {
 private:
-    int edge_id_;
+    int edge_id_;           //这条边的编号
     Eigen::Matrix4d transformational_matrix_; //= junk_map::returnEigen();    //to到from的变换矩阵
-    NodeInfo* from_point_cloud_ptr_;
+    NodeInfo* from_point_cloud_ptr_;        //保存from指向的node
     NodeInfo* to_point_cloud_ptr_;
-    bool is_connected_;
+    bool is_connected_;                     //是否连接。
+    std::vector<cv::Point2f> contour_;  //两个node的公共区域（在from身上画出,5个点，最后一个点和第一个点相同的一个矩形）
 
 public:
+
+    std::vector<cv::Point2f> contour()  const
+    {
+        return contour_;
+    }
 
     EdgeInfo()
     {
@@ -243,6 +257,29 @@ public:
         from_point_cloud_ptr_ = from;
         to_point_cloud_ptr_ = to;
         transformational_matrix_ = trans_mat;
+
+        //计算contour_;
+        //TODO 改为不用再拼命读地图
+        static Cloud2Map cm0;
+        static Cloud2Map cm1;
+        cm0.loadPointCloudFromPCL(from -> PCLFile());
+        cm0.PCL2Map();
+        auto og1 = cm0.occupancy_grid();
+
+        cm1.loadPointCloudFromPCL(to -> PCLFile());
+        cm1.transFromPointCloud(trans_mat);
+        cm1.PCL2Map();
+        auto og2 = cm1.occupancy_grid();
+
+        std::vector< geometry_msgs::Point > com= CommonArea::commonOccupancyGrid(og1, og2);
+
+        //取出轮廓线，用cv来判断点是否在轮廓内
+        contour_.resize(5);
+        for (int i = 0 ; i < 5; ++ i)
+        {
+            contour_[i].x = com[i%4].x;
+            contour_[i].y = com[i%4].y;
+        }
     }
 
     int from()  const { return from_point_cloud_ptr_ -> node_number();  }
@@ -263,6 +300,11 @@ public:
         root["from"] = from();
         root["to"] = to();
         root["transformational_matrix"] = junk_map::mat2Json(transformational_matrix_);
+        for (int i = 0; i < contour_.size(); ++ i)
+        {
+            root["contour"][i]["x"] = contour_[i].x;
+            root["contour"][i]["y"] = contour_[i].y;
+        }
         return std::move( root );
     }
 
@@ -279,6 +321,13 @@ public:
         from_point_cloud_ptr_ = &nodes_info[ root["from"].asInt() ];
         to_point_cloud_ptr_ = &nodes_info[ root["to"].asInt() ];
         transformational_matrix_ = junk_map::json2Mat(root);
+        int cnt = 0;
+        contour_.resize(root["contour"].size());
+        for (int i = 0; i < root["contour"].size(); ++ i)
+        {
+            contour_[i].x = root["contour"][i]["x"].asDouble();
+            contour_[i].y = root["contour"][i]["y"].asDouble();
+        }
     }
 };
 
@@ -305,15 +354,16 @@ private:
     std::string cv_file_ = "no_file";
 
     std::vector<int> paths_; //要经过的路径. front为即将要去的点。 如果为空，则当前已经在目标点内。
-    geometry_msgs::Pose cur_pose_;  //当前位置的pose_, 世界坐标系的pose
+    int cur_pos_;   //表示当前到path的第几个位置.
+    //geometry_msgs::Pose cur_pose_;  //当前位置的pose_, 世界坐标系的pose
     int cur_node_id_;   //当前所处的node
 
     ros::NodeHandle *node_handle_ptr_;
-    ros::Subscriber *sub_odometry_ptr_;
+    //ros::Subscriber *sub_odometry_ptr_;
     ros::Publisher pub_initial_pose_;
     ros::Publisher pub_marker_;
     ros::Publisher pub_local_map_;
-    nav_msgs::Odometry cur_odometry_;
+    //nav_msgs::Odometry cur_odometry_;   //貌似没用到这个信息
 
     geometry_msgs::PoseWithCovarianceStamped pose_;
     visualization_msgs::Marker marker_;
@@ -321,61 +371,73 @@ private:
 
     bool retrieveCallback(ugv_localizer::LocalMapRetrieve::Request &req,
                           ugv_localizer::LocalMapRetrieve::Response &res,
-                          cv::Point2f * pose, ros::Publisher & pub_local_map)
+                          bool * flag, std::vector<cv::Point2f> * contour_ptr, Eigen::Matrix4d *trans_ptr)
     {
-        //TODO 考虑 pose的变换关系,去掉pose和pub_local_map的东西
+        cv::Point2f pose;
+
+        pose.x = req.poseWithStamp.pose.position.x;
+        pose.y = req.poseWithStamp.pose.position.y;
+        pose_.pose.pose = req.poseWithStamp.pose;
+
+        if (contour_ptr && cv::pointPolygonTest(*contour_ptr, pose, false) == 1)
+        {
+            ROS_INFO("switching map..");
+
+            //ROS_INFO_STREAM(pose_);
+            *flag = true;   //需要切换地图
+            cur_node_id_ = paths_[cur_pos_++];
+            if (cur_pos_ == paths_.size() - 1)
+            {
+                //是最后一个了。
+                //TODO
+                std::cout<<"see map::retrieveCallback"<<std::endl;
+                contour_ptr = NULL;
+                marker_.points.clear(); //清空marker
+                exit(0);
+            }
+            else
+            {
+                auto &edge = map_[cur_node_id_][paths_[cur_pos_]];
+                *contour_ptr = edge.contour();
+                for (int i = 0; i < 5;++i)
+                {
+                    marker_.points[i].x = (*contour_ptr)[i%4].x;
+                    marker_.points[i].y = (*contour_ptr)[i%4].y;
+                    marker_.points[i].z = 0;
+                }
+                transforPose(trans_ptr->inverse());
+            }
+            //std::cout << *trans_ptr << std::endl;
+            //ROS_INFO_STREAM(pose_);
+        }
+
         auto &node = nodes_info_[cur_node_id_];
+        req.poseWithStamp.pose = pose_.pose.pose;
         node.retrieve(req.poseWithStamp, res.pointcloud);   //给一个位姿，返回一个点云。同时自带发布消息
-        pose -> x =req.poseWithStamp.pose.position.x;
-        pose -> y =req.poseWithStamp.pose.position.y;
-        std::cout<<pose -> x<<" "<<pose -> y<<std::endl;
 
+        if (*flag)  publishPose();          //切换地图，才发布init pose
         pub_local_map_.publish(res.pointcloud);    //发布出这个地图
-        pub_marker_.publish(marker_); //发布地图公共区域的问题。
-
+        pub_marker_.publish(marker_); //发布地图公共区域,还没更新edge
         std::cout<<"published && cur_node_id = "<<cur_node_id_<<std::endl;
         return true;
     }
 
     //在一个node里
-    void run(std::vector<cv::Point2f> * contour_ptr = NULL) //到达公共区域，就结束
+    void run(Eigen::Matrix4d * trans_ptr, std::vector<cv::Point2f> * contour_ptr = NULL) //到达公共区域，就结束
     {
         auto &node = nodes_info_;
-        cv::Point2f pose;
-        pose.x = pose_.pose.pose.position.x;
-        pose.y = pose_.pose.pose.position.y;
-
-
-
+        bool flag = false;  //判定是否要更换地图。默认是不用，false
 
         boost::function<bool(ugv_localizer::LocalMapRetrieve::Request&, ugv_localizer::LocalMapRetrieve::Response&)> call_back ;
-        static ros::Publisher pub_local_map = node_handle_ptr_ -> advertise<sensor_msgs::PointCloud2> ("/retrived_map", 10);    //默认用来发布新local map的
+        //static ros::Publisher pub_local_map = node_handle_ptr_ -> advertise<sensor_msgs::PointCloud2> ("/retrived_map", 10);    //默认用来发布新local map的
         ROS_INFO("init pub_loacal_map OK");
-        call_back = boost::bind(&Map::retrieveCallback, this, _1, _2, &pose, pub_local_map);
+        call_back = boost::bind(&Map::retrieveCallback, this, _1, _2, &flag, contour_ptr, trans_ptr);
         ros::ServiceServer service = node_handle_ptr_ -> advertiseService("/local_map_retrieve", call_back);
         ROS_INFO("running node");
 
         int cnt=0;
-        while (ros::ok())
+        while (ros::ok() && false == flag)
         {
-#ifdef DEBUG
-            ++cnt;
-            if (cnt%1000000==0)
-            {
-                std::cout << pose.x << " " << pose.y << std::endl;
-            }
-#endif
-            if (contour_ptr && cv::pointPolygonTest(*contour_ptr, pose, false) == 1)
-            {
-                //如果在公共区域，则切换地图。
-                break;
-            }
-
-            if (contour_ptr)
-            {
-                //发布marker
-                pub_marker_.publish(marker_);
-            }
             ros::spinOnce();
         }
         ROS_INFO("switching map");
@@ -390,38 +452,61 @@ private:
 
     void transforPose(Eigen::Matrix4d trans)
     {
+        //auto pose = cur_odometry_.pose;
+        std::cout << trans << std::endl;
+     //   ROS_INFO_STREAM(trans);
+     //   ROS_INFO_STREAM(pose_);
+
         Eigen::Isometry3d I = Eigen::Isometry3d::Identity();
-        auto x = pose_.pose.pose.orientation.x;
-        auto y = pose_.pose.pose.orientation.y;
-        auto z = pose_.pose.pose.orientation.y;
-        auto w = pose_.pose.pose.orientation.w;
+        double x = pose_.pose.pose.orientation.x;
+        double y = pose_.pose.pose.orientation.y;
+        double z = pose_.pose.pose.orientation.z;
+        double w = pose_.pose.pose.orientation.w;
         Eigen::Quaterniond Q(w, x, y, z);
+
         x = pose_.pose.pose.position.x;
         y = pose_.pose.pose.position.y;
         z = pose_.pose.pose.position.z;
+
         Eigen::Vector3d V(x, y, z);
         I.rotate(Q);
-        I.translate(V);
-        trans *= I.matrix();
-        Q = Eigen::Quaterniond(I.matrix().block<3,3>(0,0));
-        V = I.matrix().block<3, 1>(0,3);
+        I.pretranslate(V);
+        trans = trans * I.matrix();
+        Q = Eigen::Quaterniond(trans.block<3,3>(0,0));
+        V = trans.block<3, 1>(0,3);
 
-        pose_.pose.pose.orientation.w = Q.matrix()(0);
-        pose_.pose.pose.orientation.x = Q.matrix()(1);
-        pose_.pose.pose.orientation.y = Q.matrix()(2);
-        pose_.pose.pose.orientation.z = Q.matrix()(3);
+
+        pose_.pose.pose.orientation.w = Q.w();
+        pose_.pose.pose.orientation.x = Q.x();
+        pose_.pose.pose.orientation.y = Q.y();
+        pose_.pose.pose.orientation.z = Q.z();
 
         pose_.pose.pose.position.x = V(0);
         pose_.pose.pose.position.y = V(1);
         pose_.pose.pose.position.z = V(2);
+     //   ROS_INFO_STREAM(pose_);
     }
 
     void publishPose()
     {
-        //发10此，确保发到
-        for (int i = 1; i <= 10; ++ i)
+        //多发几次，确保能收到
+        for (int i = 1; i<= 1;++i)
         {
             pub_initial_pose_.publish(pose_);
+            //ros::Duration(1).sleep();
+        }
+        ROS_INFO("/initialpose is published");
+    }
+
+    void publishLocalMap()
+    {
+        static sensor_msgs::PointCloud2 cloud;
+        nodes_info_[cur_node_id_].pos2cloud(pose_, cloud);
+        //发布3次
+        std::cout << cur_node_id_ << std::endl;
+        for (int i = 1;i<=1;++i)
+        {
+            pub_local_map_.publish(cloud);  //发布地图
         }
     }
 
@@ -430,7 +515,7 @@ public:
 
     ~Map()
     {
-        delete sub_odometry_ptr_;
+        //delete sub_odometry_ptr_;
         delete node_handle_ptr_;
     }
 
@@ -457,12 +542,55 @@ public:
         }
         else
         {
+            //TODO 不然在delete函数那可能出问题
+            exit(0);
             node_handle_ptr_ = nh;
         }
+
+        //设置位姿发布器
+        pub_initial_pose_ = node_handle_ptr_ -> advertise<geometry_msgs::PoseWithCovarianceStamped>("/initialpose", 10);
+
+        //设置callback
+        //boost::function<int(const nav_msgs::OdometryConstPtr&)> odom_handler ;
+        //odom_handler = boost::bind(&Map::odometryCallBack, this , _1, &cur_odometry_);
+        //sub_odometry_ptr_ = new ros::Subscriber( node_handle_ptr_ -> subscribe<nav_msgs::Odometry>("/laser_odom_to_map", 10, odom_handler));
+
+        //发布公共区域框框用的
+        pub_marker_ = node_handle_ptr_ -> advertise<visualization_msgs::Marker>("marker", 10);
+        pub_local_map_ = node_handle_ptr_ -> advertise<sensor_msgs::PointCloud2> ("/retrived_map", 10);
+
+        //设置初始的第一个pose
+        pose_.header.seq = 0;
+        pose_.header.stamp = ros::Time::now();
+        pose_.header.frame_id = param::cloud2map::frame;
+        pose_.pose.pose.position.x = 0;
+        pose_.pose.pose.position.y = 0;
+        pose_.pose.pose.position.z = 0;
+        pose_.pose.pose.orientation.x = 0;
+        pose_.pose.pose.orientation.y = 0;
+        pose_.pose.pose.orientation.z = -0.703935902556;
+        pose_.pose.pose.orientation.w = 0.710263503984;
+
+        //设置画common area的粉色方框。
+        //TODO 支持不规则多边形。
+        marker_.header.frame_id = "global_frame";
+        marker_.header.stamp = ros::Time::now();
+        marker_.header.seq = 0;
+        marker_.type = marker_.LINE_STRIP;
+        marker_.action = marker_.ADD;
+        marker_.id = 1;
+        marker_.pose.position.x = 0;
+        marker_.pose.position.y = 0;
+        marker_.pose.position.z = 0;
+        marker_.color.a = 1;
+        marker_.color.r = 1;
+        marker_.color.g = 0;
+        marker_.color.b = 1;
+        marker_.scale.x = 2;
+        marker_.scale.y = 2;
+        marker_.scale.z = 2;
+        //marker_.points.resize(5);
     }
-
-
-
 
     void core()
     {
@@ -480,116 +608,45 @@ public:
         }
 
 
-        //TODO 改为可以直接读取的数据
-        pose_.header.seq = 0;
-        pose_.header.stamp = ros::Time::now();
-        pose_.header.frame_id = param::cloud2map::frame;
-        pose_.pose.pose.position.x = 2.0682258606;
-        pose_.pose.pose.position.y = -18.2951946259;
-        pose_.pose.pose.position.z = 0;
-        pose_.pose.pose.orientation.x = 0;
-        pose_.pose.pose.orientation.y = 0;
-        pose_.pose.pose.orientation.z = -0.719839325025;
-        pose_.pose.pose.orientation.w = 0.694140725032;
+        //手动设置marker
 
-
-
-
-        pub_initial_pose_ = node_handle_ptr_ -> advertise<geometry_msgs::PoseWithCovarianceStamped>("/initialpose", 1);
-
-
-        boost::function<int(const nav_msgs::OdometryConstPtr&)> odom_handler ;
-        odom_handler = boost::bind(&Map::odometryCallBack, this , _1, &cur_odometry_);
-        sub_odometry_ptr_ = new ros::Subscriber( node_handle_ptr_ -> subscribe<nav_msgs::Odometry>("/laser_odom_to_map", 1, odom_handler));
-
-        //发布公共区域框框用的
-        pub_marker_ = node_handle_ptr_ -> advertise<visualization_msgs::Marker>("marker", 10);
-
-        Eigen::Matrix4d last_trans = Eigen::Matrix4d::Identity();
-
-        for (int i = 0; i != paths_.size(); ++ i)
+        //TODO 没写path_为空的情况
+        if (paths_.size() == 0)
         {
-            //TODO  直接保存公共区域，应该是更好的方案，就不用在这里求一下耽误时间了。
-            //TODO 也就是预处理就直接保存公共区域即可。
+            //TODO
+            std::cout<<"不好玩"<<std::endl;
+            exit(0);
+        }
 
-            transforPose(last_trans.inverse());
-            //发布一次新的地图
-
-
-            publishPose();  //因为地图坐标变换了，所以要发布位姿和地图。
-
-            auto &edge = map_[cur_node_id_][paths_[i]];
-            CHECK_EQ(edge.is_connceted(), true,  "the two node is not connected!");
-            auto trans = edge.transformational_matrix();
-            //nodes_info_[paths_[i]].transform( trans );
-
-            static Cloud2Map cm0;
-            static Cloud2Map cm1;
-            cm0.loadPointCloudFromPCL(nodes_info_[cur_node_id_].PCLFile());
-            cm0.PCL2Map();
-            auto og1 = cm0.occupancy_grid();
-
-            cm1.loadPointCloudFromPCL(nodes_info_[paths_[i]].PCLFile());
-            cm1.transFromPointCloud(trans);
-            cm1.PCL2Map();
-            auto og2 = cm1.occupancy_grid();
-
-
-            std::vector< geometry_msgs::Point > com= CommonArea::commonOccupancyGrid(og1, og2);
-            ROS_INFO("the common area are:");
-            for (auto point : com)
-                printf("%lf %lf\n", point.x, point.y);
-
-
-            //取出轮廓线，用cv来判断点是否在轮廓内
-            std::vector<cv::Point2f> contour;
-            contour.resize(4);
-            for (int i = 0 ; i < 4; ++ i)
-            {
-                contour[i].x = com[i].x;
-                contour[i].y = com[i].y;
-            }
-
-
-            //显示公共区域为marker类型
-            //TODO写到参数里
-            marker_.header.frame_id = "global_frame";
-            marker_.header.stamp = ros::Time::now();
-            marker_.header.seq = 0;
-            marker_.type = marker_.LINE_STRIP;
-            marker_.action = marker_.ADD;
-            //marker.lifetime = ros::Duration(0.0);
-            marker_.id = 1;
-            marker_.pose.position.x = 0;
-            marker_.pose.position.y = 0;
-            marker_.pose.position.z = 0;
-            marker_.color.a = 1;
-            marker_.color.r = 1;
-            marker_.color.g = 0;
-            marker_.color.b = 1;
-
-            marker_.scale.x = 2;
-            marker_.scale.y = 2;
-            marker_.scale.z = 2;
-
-            marker_.points = com;
-            marker_.points.push_back(com[0]);
-            //junk_map::pub_marker.publish(junk_map::marker);
-
-
-
-            run(&contour);
-
-            std::cout<<"切换地图"<<std::endl;
-
-            //nodes_info_[paths_[i]].invTransform( trans );
-            cur_node_id_ = paths_[i];
-            //TODO 坐标转换
+        //给marker设置公共区域
+        auto &edge = map_[cur_node_id_][paths_[0]];
+        auto contour = edge.contour();
+        marker_.points.resize( contour.size()  );
+        for (int i = 0; i < contour.size() ; ++i )
+        {
+            marker_.points[i].x = contour[i].x;
+            marker_.points[i].y = contour[i].y;
+            marker_.points[i].z = 0;
         }
 
 
+        Eigen::Matrix4d last_trans = Eigen::Matrix4d::Identity();
+        cur_pos_ = 0;
+        publishPose();   //第一次给一个init pose的信息
+        publishLocalMap();  //发布一下第一个localMap
 
+        for (int i = 0; i != paths_.size() - 1; ++ i)
+        {
+            auto &edge = map_[cur_node_id_][paths_[i]];
+            //std::cout<< cur_node_id_<<" "<<paths_[i] << std::endl;
+            CHECK_EQ(edge.is_connceted(), true,  "the two node is not connected!");
+            last_trans = edge.transformational_matrix();
 
+            run(&last_trans, &contour);
+        }
+
+        //TODO 没有下一个目标的情况。也就是没有公共区域的情况。
+        run(NULL, NULL);
         //没有下一个点了
         //先实现一个node
         //run();
@@ -654,6 +711,10 @@ public:
             }
             root["nodes"][i] = nodes_info_[i].json();
         }
+        for (int i = 0; i < paths_.size(); ++ i)
+        {
+            root["path"][i] = paths_[i];
+        }
 
         std::ofstream of(file_name);
         of << root;
@@ -692,7 +753,11 @@ public:
             int to = json["to"].asInt();
             map_[from][to].loadFromJson(json, nodes_info_);
         }
-
+        paths_.clear();
+        for (auto json : root["path"])
+        {
+            paths_.push_back(json.asInt());
+        }
     }
 
     void SPFA(int from, int to, std::vector<int> & nodes) //球from 到to的路径，经过的路径保存在nodes中，经过的边保存在edges中
@@ -770,11 +835,10 @@ Map map(6);
 int main(int argc, char* argv[])
 {
     ros::init(argc, argv, "map");
-    ros::NodeHandle map_nh;
-    map.initNodeHandle(&map_nh);
+    map.initNodeHandle();
 
 
-//#define LOAD
+#define LOAD
 #ifdef LOAD
 
     map.load("/home/bohuan/map_test/json");
@@ -783,6 +847,7 @@ int main(int argc, char* argv[])
     std::cout <<"nodes" << std::endl;
     for (auto x : nodes)
         std::cout << x<<" ";std::cout<<std::endl;
+    map.core();
     map.save("/home/bohuan/map_test/json_test");
     return 0;
 
@@ -809,7 +874,6 @@ int main(int argc, char* argv[])
     map.add_edge(3,4, 3, param::from4to3());
     map.add_edge(4,3, 3, param::from4to3().inverse());
 
-
     map.add_edge(4,5, 4, param::from5to4());
     map.add_edge(5,4, 4, param::from5to4().inverse());
 
@@ -823,10 +887,9 @@ int main(int argc, char* argv[])
 
     //
     map.setCurNodeID(0);
-    std::vector<int> path = {0,1,2,3,4,5};
+    std::vector<int> path = {0,1,2,3,4,5,1,2};
     map.setPaths(path);
-    map.core();
-
+    //map.core();
 
     map.save("/home/bohuan/map_test/json");
     return 0;

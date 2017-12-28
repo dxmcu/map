@@ -160,6 +160,8 @@ struct CVMat
     }
 };
 
+
+/*
 class BoundingBox
 {
 public:
@@ -294,5 +296,6 @@ private:
     int Y_;
     int flag_ = 0;
 };
+ */
 
 #endif //MAP_COMMON_H
