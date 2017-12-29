@@ -166,6 +166,7 @@ namespace CommonArea {
 
 
 
+    //根据map的数据，得到公共区域
     static cv::Mat getContor()
     {
         cv::threshold(map, map, 150, 255, CV_THRESH_BINARY);
