@@ -2,8 +2,8 @@
 // Created by bohuan on 17-12-20.
 //
 
-#ifndef MAP_COMMON_H
-#define MAP_COMMON_H
+#ifndef MAP_CORE_COMMON_H
+#define MAP_CORE_COMMON_H
 
 #include <bits/stdc++.h>
 #include <json/json.h>
@@ -14,7 +14,6 @@
 #define pr(x)   std::cout<<#x<<"="<<x<<","
 #define prln(x) std::cout<<#x<<"="<<x<<std::endl
 
-//#define DIE
 #define CHECK_EQ(x,y,z) if(!(x==y)) pr(x), pr(y)<<z, exit(-1);
 #define CHECK_GE(x,y,z) if(!(x>=y)) pr(x), pr(y)<<z, exit(-1);
 #define CHECK_LE(x,y,z) if(!(x<=y)) pr(x), pr(y)<<z, exit(-1);
@@ -265,6 +264,7 @@ namespace param
 }
 
 
+
 struct CVMat
 {
     cv::Mat mat;
@@ -306,143 +306,4 @@ struct CVMat
         return mat.at<uchar>(x, y);
     }
 };
-
-
-/*
-class BoundingBox
-{
-public:
-    void setMinX(double x){ min_x_ = x; flag_|=1;}
-    void setMaxX(double x){ max_x_ = x; flag_|=2;}
-    void setMinY(double y){ min_y_ = y; flag_|=4;}
-    void setMaxY(double y){ max_y_ = y; flag_|=8;}
-    void setX(int x) { X_ = x; flag_|=16;}
-    void setY(int y) { Y_ = y; flag_|=32;}
-
-    void setX(double x) = delete;
-    void setX(float x) = delete;
-    void setX(unsigned char x) = delete;
-    void setX(short x) = delete;
-
-    void setY(double y) = delete;
-    void setY(float y) = delete;
-    void setY(unsigned char y) = delete;
-    void setY(short y) = delete;
-    BoundingBox()
-    {
-        flag_ = 0;
-    }
-
-    explicit BoundingBox(int X, int Y)
-    {
-        flag_ = 0;
-        setX(X);
-        setY(Y);
-    }
-
-    explicit BoundingBox(double min_x, double max_x, double min_y, double max_y)
-    {
-        flag_ = 0;
-        setMinX(min_x);
-        setMinX(max_x);
-        setMinY(min_y);
-        setMaxY(max_y);
-    }
-
-    explicit BoundingBox(double min_x, double max_x, double min_y, double max_y, int X, int Y)
-    {
-        flag_ = 0;
-        setX(X);
-        setY(Y);
-        setMinX(min_x);
-        setMinX(max_x);
-        setMinY(min_y);
-        setMaxY(max_y);
-    }
-
-    void loadFromJson(Json::Value root)
-    {
-        min_x_ = root["min_x"].asDouble();
-        max_x_ = root["max_x"].asDouble();
-        min_y_ = root["min_y"].asDouble();
-        max_y_ = root["max_y"].asDouble();
-        X_ = root["X"].asInt();
-        Y_ = root["Y"].asInt();
-        flag_ = root["flag"].asInt();
-    }
-
-    Json::Value json()
-    {
-        Json::Value root;
-        root["min_x"] = min_x_;
-        root["max_x"] = max_x_;
-        root["min_y"] = min_y_;
-        root["max_y"] = max_y_;
-        root["X"] = X_;
-        root["Y"] = Y_;
-        root["flag"] = flag_;
-        return std::move( root );
-    }
-
-    std::pair<int, int> point2XY(geometry_msgs::Point point)
-    {
-        CHECK_EQ(flag_, 63, "没有完整的初始化所有信息");
-        CHECK_GE(max_x_, min_x_, "x的最大值小于最小值？");
-        CHECK_GE(max_y_, min_y_, "y的最大值小于最小值？");
-
-        std::pair<int, int> ret;
-        double tot_x = max_x_ - min_x_ + 1;
-        double tot_y = max_y_ - min_y_ + 1;
-        ret.first  = round( ( point.x - min_x_ ) / tot_x * X_ );
-        ret.second = round( ( point.y - min_y_ ) / tot_y * Y_ );
-
-        assert(ret.first >= 0);
-        assert(ret.second >= 0);
-        assert(ret.first < X_);
-        assert(ret.second < Y_);
-        return std::move( ret );
-    };
-
-    geometry_msgs::Point XY2point(int x, int y)
-    {
-        CHECK_EQ(flag_, 63, "没有完整的初始化所有信息, common.h");
-        CHECK_GE(max_x_, min_x_, "x的最大值小于最小值？ commom.h");
-        CHECK_GE(max_y_, min_y_, "y的最大值小于最小值？ common.h");
-
-        geometry_msgs::Point ret;
-        ret.x = (max_x_ - min_x_) / X_ * x + min_x_;
-        ret.y = (max_y_ - min_y_) / Y_ * y + min_y_;
-        return std::move( ret );
-    }
-
-
-    bool isVaild(geometry_msgs::Point point)
-    {
-        CHECK_EQ(flag_, 63, "没有完整的初始化所有信息 common.h");
-        CHECK_GE(max_x_, min_x_, "x的最大值小于最小值？ common.h");
-        CHECK_GE(max_y_, min_y_, "y的最大值小于最小值？ common.h");
-
-        if ( point.x > max_x_ )  return false;
-        if ( point.x < min_x_ )  return false;
-        if ( point.y > max_y_ )  return false;
-        if ( point.y < min_y_ )  return false;
-        return true;
-    }
-
-    int X() const {return X_;}
-    int Y() const {return Y_;}
-
-
-
-private:
-    double min_x_;
-    double max_x_;
-    double min_y_;
-    double max_y_;
-    int X_;
-    int Y_;
-    int flag_ = 0;
-};
- */
-
-#endif //MAP_COMMON_H
+#endif

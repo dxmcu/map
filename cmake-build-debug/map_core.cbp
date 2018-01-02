@@ -1672,29 +1672,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/bohuan/catkin_test/src/map/include/cloud2map.h">
-			<Option target="test_cloud2map"/>
-		</Unit>
-		<Unit filename="/home/bohuan/catkin_test/src/map/include/common.h">
-			<Option target="map"/>
-			<Option target="test_cloud2map"/>
-			<Option target="test_cv2grid"/>
-		</Unit>
-		<Unit filename="/home/bohuan/catkin_test/src/map/include/common_area.h">
-			<Option target="map"/>
-		</Unit>
-		<Unit filename="/home/bohuan/catkin_test/src/map/include/cvMat2GridMap.h">
-			<Option target="test_cv2grid"/>
-		</Unit>
-		<Unit filename="/home/bohuan/catkin_test/src/map/include/map_db_node.h">
-			<Option target="map"/>
-		</Unit>
-		<Unit filename="/home/bohuan/catkin_test/src/map/include/point_cloud.h">
-			<Option target="map"/>
-		</Unit>
-		<Unit filename="/home/bohuan/catkin_test/src/map/include/showPointCloud.h">
-			<Option target="map"/>
-		</Unit>
 		<Unit filename="/home/bohuan/catkin_test/src/map/sample/test_cloud2map.cpp">
 			<Option target="test_cloud2map"/>
 		</Unit>
@@ -1705,9 +1682,6 @@
 			<Option target="test_cv2grid"/>
 		</Unit>
 		<Unit filename="/home/bohuan/catkin_test/src/map/sample/test_map_db_node.cpp">
-			<Option target="test_map_db_node"/>
-		</Unit>
-		<Unit filename="/home/bohuan/catkin_test/src/map/src/laserutils.cpp">
 			<Option target="test_map_db_node"/>
 		</Unit>
 		<Unit filename="/home/bohuan/catkin_test/src/map/src/map.cpp">

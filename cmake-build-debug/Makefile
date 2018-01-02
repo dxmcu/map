@@ -1666,33 +1666,6 @@ sample/test_map_db_node.cpp.s:
 	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/sample/test_map_db_node.cpp.s
 .PHONY : sample/test_map_db_node.cpp.s
 
-src/laserutils.o: src/laserutils.cpp.o
-
-.PHONY : src/laserutils.o
-
-# target to build an object file
-src/laserutils.cpp.o:
-	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/laserutils.cpp.o
-.PHONY : src/laserutils.cpp.o
-
-src/laserutils.i: src/laserutils.cpp.i
-
-.PHONY : src/laserutils.i
-
-# target to preprocess a source file
-src/laserutils.cpp.i:
-	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/laserutils.cpp.i
-.PHONY : src/laserutils.cpp.i
-
-src/laserutils.s: src/laserutils.cpp.s
-
-.PHONY : src/laserutils.s
-
-# target to generate assembly for a file
-src/laserutils.cpp.s:
-	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/laserutils.cpp.s
-.PHONY : src/laserutils.cpp.s
-
 src/map.o: src/map.cpp.o
 
 .PHONY : src/map.o
@@ -1882,9 +1855,6 @@ help:
 	@echo "... sample/test_map_db_node.o"
 	@echo "... sample/test_map_db_node.i"
 	@echo "... sample/test_map_db_node.s"
-	@echo "... src/laserutils.o"
-	@echo "... src/laserutils.i"
-	@echo "... src/laserutils.s"
 	@echo "... src/map.o"
 	@echo "... src/map.i"
 	@echo "... src/map.s"
