@@ -167,33 +167,45 @@ namespace CommonArea {
 
 
     //根据map的数据，得到公共区域
-    static cv::Mat getContor()
+    static std::vector<cv::Mat> getContor()
     {
+        std::vector<cv::Mat> ret;
         cv::threshold(map, map, 150, 255, CV_THRESH_BINARY);
         std::vector <std::vector<cv::Point>>contours;
         cv::findContours(map,
                          contours,
                          CV_RETR_TREE,
                          CV_CHAIN_APPROX_NONE);
-        cv::Mat conter(map.size(), CV_8U, cv::Scalar(255));
 
         auto func = [](const std::vector<cv::Point> &it1,
                        const std::vector<cv::Point> &it2)->bool {
             return it1.size() > it2.size();
         };
         std::sort(contours.begin(), contours.end(), func);
-        std::vector<cv::Point> component = contours[0];
-        for (auto &it:component)
-            conter.at<uchar>(it.y, it.x) = 0;
-        cv::drawContours(conter,contours, 0, cv::Scalar(0),CV_FILLED);
-        cv::bitwise_not(conter, conter);
-        return std::move(conter);
+
+        //ret.resize(std::min((int)contours.size(), 3));
+
+        for (int i = 0; i < contours.size(); ++ i)
+        {
+            if (i && contours[i].size() < param::min_contour_area)   break;
+            std::cout<<"the size is:" << contours[i].size() << std::endl;
+            cv::Mat conter(map.size(), CV_8U, cv::Scalar(255));
+            std::vector<cv::Point> component = contours[i];
+            for (auto &it:component)
+                conter.at<uchar>(it.y, it.x) = 0;
+            cv::drawContours(conter, contours, i, cv::Scalar(0), CV_FILLED);
+            cv::bitwise_not(conter, conter);
+            ret.push_back(conter);
+
+            if (i == param::max_markers-1)    break;
+        }
+        return std::move(ret);
     }
 
 
     //2块点云已经被拼好，并投射为OccupancyGrid后的样子。
     //返回值为一个point的vector,size为4.分别为4个坐标。表示一个矩形。
-    static  std::vector< geometry_msgs::Point > commonOccupancyGrid(nav_msgs::OccupancyGrid &og1, nav_msgs::OccupancyGrid &og2)
+    static  std::vector< std::vector< geometry_msgs::Point > >commonOccupancyGrid(nav_msgs::OccupancyGrid &og1, nav_msgs::OccupancyGrid &og2)
     {
         CHECK_EQ(og1.info.resolution, og2.info.resolution, "分辨率有问题. common_area.h");
         CHECK_EQ(og1.info.resolution, param::cloud2map::cell_resolution, "分辨率有问题 common.area.h");
@@ -221,7 +233,9 @@ namespace CommonArea {
 
         x_cells = std::ceil( (x_max - x_min) / og1.info.resolution );
         y_cells = std::ceil( (y_max - y_min) / og1.info.resolution );
+#ifdef DEBUG
         pr(x_min),pr(x_max),pr(y_min),pr(y_max),pr(x_cells),prln(y_cells);
+#endif
 
         /*//可通行 0
         //不可通行100
@@ -245,7 +259,8 @@ namespace CommonArea {
         //cv::namedWindow("拼接地图", 0);
         //cv::imshow("拼接地图", map);
         //cv::waitKey(-1);
-        auto conter = getContor();
+        auto conters = getContor();
+
 
         /*
         //cv::medianBlur(map, map, 5);
@@ -287,25 +302,29 @@ namespace CommonArea {
          */
 
 
-        //------------
-        cv::RotatedRect r = largestRectInNonConvexPoly(conter);
-        // Show
-        cv::Mat3b res;
-        cv::cvtColor(conter, res, cv::COLOR_GRAY2BGR);
-        cv::Point2f points[4];
-        r.points(points);
+        std::vector< std::vector< geometry_msgs::Point > > ret;
+        ret.resize(conters.size());
 
 
-        std::vector< geometry_msgs::Point > ret;
-        ret.resize(4);
-
-        for (int i = 0; i< 4; ++ i)
+        for (int p = 0; p < conters.size(); ++ p)
         {
-            ret[i].y = points[i].x / param::cloud2map::cell_resolution + origin_y;
-            ret[i].x = points[i].y / param::cloud2map::cell_resolution + origin_x;
-            ret[i].z = 0;
-            //pr(points[i].x / param::cloud2map::cell_resolution + origin_y), prln(points[i].y / param::cloud2map::cell_resolution + origin_x);
-            //pr(points[i].x), prln(points[i].y);
+            //------------
+            cv::RotatedRect r = largestRectInNonConvexPoly(conters[p]);
+            // Show
+            cv::Mat3b res;
+            cv::cvtColor(conters[p], res, cv::COLOR_GRAY2BGR);
+            cv::Point2f points[4];
+            r.points(points);
+            ret[p].resize(4);
+
+
+            for (int i = 0; i < 4; ++i) {
+                ret[p][i].y = points[i].x / param::cloud2map::cell_resolution + origin_y;
+                ret[p][i].x = points[i].y / param::cloud2map::cell_resolution + origin_x;
+                ret[p][i].z = 0;
+                //pr(points[i].x / param::cloud2map::cell_resolution + origin_y), prln(points[i].y / param::cloud2map::cell_resolution + origin_x);
+                //pr(points[i].x), prln(points[i].y);
+            }
         }
         return std::move( ret );
         /*

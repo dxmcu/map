@@ -104,11 +104,11 @@ public:
 
     void loadGlobalMapFromPCD(const std::string & pcd_name)  //从pcd文件获取global map
     {
-        ROS_WARN_STREAM("pcd name: " << pcd_name);
+        ROS_INFO_STREAM("pcd name: " << pcd_name);
         std::ifstream infileSwitch(pcd_name);
-        pcl::PCDReader pcd_reader;      //读入一个pcd格式的数据
-        pcl::PCLPointCloud2 input_pcl;  //保存pcl格式
-        sensor_msgs::PointCloud2 pc_in_msg; //要发布的数据 好像没啥用
+        static pcl::PCDReader pcd_reader;      //读入一个pcd格式的数据
+        static pcl::PCLPointCloud2 input_pcl;  //保存pcl格式
+        static sensor_msgs::PointCloud2 pc_in_msg; //要发布的数据 好像没啥用
         //预处理全局地图
         if (infileSwitch.good())
         {
@@ -123,12 +123,14 @@ public:
             //global
             params.clear();
             globalSurfaceNormalFilter->inPlaceFilter(globalMap_);   //对globalmap做简单的预处理
+            delete globalSurfaceNormalFilter;
         }
         else
         {
             ROS_ERROR_STREAM("MAP FILE ERROR");
             exit(0);
         }
+        infileSwitch.close();
     }
 
 
