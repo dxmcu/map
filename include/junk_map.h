@@ -10,11 +10,11 @@
 
 namespace junk_map {
 
-    Cloud2Map cloud2map;
+    static Cloud2Map cloud2map;
 
-    const std::vector<int> compression_params(CV_IMWRITE_PNG_COMPRESSION, 100);
+    static const std::vector<int> compression_params(CV_IMWRITE_PNG_COMPRESSION, 100);
 
-    Eigen::Matrix4d returnEigen(double th = 0) {
+    static Eigen::Matrix4d returnEigen(double th = 0) {
         Eigen::Matrix4d T;
         T << cos(th), -sin(th), 0, 0,
                 sin(th), cos(th), 0, 0,
@@ -23,7 +23,7 @@ namespace junk_map {
         return std::move(T);
     }
 
-    Eigen::Matrix4d json2Mat(Json::Value root) {
+    static Eigen::Matrix4d json2Mat(Json::Value root) {
         Eigen::Matrix4d ret;
         std::stringstream x;
         x << root["transformational_matrix"].asString().c_str();
@@ -37,14 +37,14 @@ namespace junk_map {
         return std::move(ret);
     }
 
-    Json::Value mat2Json(Eigen::Matrix4d mat) {
+    static Json::Value mat2Json(Eigen::Matrix4d mat) {
         Json::Value root;
         std::stringstream trans_mat;
         trans_mat << mat;
         return root["transformational_matrix"] = trans_mat.str();
     }
 
-    const std::string getCurrentSystemTime()
+    static const std::string getCurrentSystemTime()
     {
         struct timeval s_now;
         struct tm* p_tm;

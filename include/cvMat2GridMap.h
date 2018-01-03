@@ -2,8 +2,8 @@
 // Created by bohuan on 17-12-21.
 //
 
-#ifndef MAP_CVMAT2GRIDMAP_H
-#define MAP_CVMAT2GRIDMAP_H
+#ifndef MAP_CORE_CVMAT2GRIDMAP_H
+#define MAP_CORE_CVMAT2GRIDMAP_H
 
 #include <bits/stdc++.h>
 #include <opencv2/opencv.hpp>

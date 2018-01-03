@@ -47,7 +47,8 @@ include_directories(
 add_executable(test_map_db_node
         sample/test_map_db_node.cpp
         src/point_cloud.cpp
-        )
+        src/map_db_node.cpp
+        src/cloud2map.cpp)
 add_dependencies(test_map_db_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} map_core_generate_messages_cpp)
 target_link_libraries(test_map_db_node ${libpointmatcher_LIBRARIES}
         ${OpenCV_LIBS}
@@ -57,7 +58,8 @@ target_link_libraries(test_map_db_node ${libpointmatcher_LIBRARIES}
 
 #测试common_area
 add_executable(test_common_area
-        sample/test_common_area.cpp)
+        sample/test_common_area.cpp
+        src/common_area.cpp src/cloud2map.cpp)
 add_dependencies(test_common_area ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(test_common_area ${libpointmatcher_LIBRARIES}
         ${OpenCV_LIBS}
@@ -66,7 +68,7 @@ target_link_libraries(test_common_area ${libpointmatcher_LIBRARIES}
 
 #测试cvmat和gridmap的互相转换
 add_executable(test_cv2grid
-        sample/test_cv2grid.cpp)
+        sample/test_cv2grid.cpp src/cloud2map.cpp)
 add_dependencies(test_cv2grid ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(test_cv2grid ${libpointmatcher_LIBRARIES}
         ${OpenCV_LIBS}
@@ -76,7 +78,7 @@ target_link_libraries(test_cv2grid ${libpointmatcher_LIBRARIES}
 
 #测试cloud到2D的程序
 add_executable(test_cloud2map
-        sample/test_cloud2map.cpp)
+        sample/test_cloud2map.cpp src/cloud2map.cpp)
         #src/cloud2map.cpp)
 add_dependencies(test_cloud2map ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(test_cloud2map ${libpointmatcher_LIBRARIES}
@@ -87,13 +89,17 @@ target_link_libraries(test_cloud2map ${libpointmatcher_LIBRARIES}
 
 
 #主程序
-add_executable(map
-  src/map.cpp
+add_executable(test_map_core
+        sample/test_map_core.cpp
+        src/map_core.cpp
         src/point_cloud.cpp
-        )
-add_dependencies(map ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+        src/common_area.cpp
+        src/EdgeInfo.cpp
+        src/map_db_node.cpp src/cloud2map.cpp src/NodeInfo.cpp)
 
-target_link_libraries(map ${libpointmatcher_LIBRARIES}
+add_dependencies(test_map_core ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+target_link_libraries(test_map_core ${libpointmatcher_LIBRARIES}
 ${OpenCV_LIBS}
   ${catkin_LIBRARIES}
 )

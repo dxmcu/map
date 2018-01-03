@@ -2,8 +2,8 @@
 // Created by bohuan on 17-12-22.
 //
 
-#ifndef MAP_SHOWPOINTCLOUD_H
-#define MAP_SHOWPOINTCLOUD_H
+#ifndef MAP_CORE_SHOWPOINTCLOUD_H
+#define MAP_CORE_SHOWPOINTCLOUD_H
 
 #include "pointmatcher/PointMatcher.h"
 #include "common.h"

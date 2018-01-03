@@ -2,8 +2,8 @@
 // Created by bohuan on 17-12-23.
 //
 
-#ifndef MAP_POINT_CLOUD_H
-#define MAP_POINT_CLOUD_H
+#ifndef MAP_CORE__POINT_CLOUD_H
+#define MAP_CORE_POINT_CLOUD_H
 
 /*************************************************************************
 	> File Name: point_cloud.h
