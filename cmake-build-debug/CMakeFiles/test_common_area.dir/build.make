@@ -81,14 +81,66 @@ CMakeFiles/test_common_area.dir/sample/test_common_area.cpp.o.provides: CMakeFil
 CMakeFiles/test_common_area.dir/sample/test_common_area.cpp.o.provides.build: CMakeFiles/test_common_area.dir/sample/test_common_area.cpp.o
 
 
+CMakeFiles/test_common_area.dir/src/common_area.cpp.o: CMakeFiles/test_common_area.dir/flags.make
+CMakeFiles/test_common_area.dir/src/common_area.cpp.o: ../src/common_area.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_common_area.dir/src/common_area.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_common_area.dir/src/common_area.cpp.o -c /home/bohuan/catkin_test/src/map/src/common_area.cpp
+
+CMakeFiles/test_common_area.dir/src/common_area.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_common_area.dir/src/common_area.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bohuan/catkin_test/src/map/src/common_area.cpp > CMakeFiles/test_common_area.dir/src/common_area.cpp.i
+
+CMakeFiles/test_common_area.dir/src/common_area.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_common_area.dir/src/common_area.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bohuan/catkin_test/src/map/src/common_area.cpp -o CMakeFiles/test_common_area.dir/src/common_area.cpp.s
+
+CMakeFiles/test_common_area.dir/src/common_area.cpp.o.requires:
+
+.PHONY : CMakeFiles/test_common_area.dir/src/common_area.cpp.o.requires
+
+CMakeFiles/test_common_area.dir/src/common_area.cpp.o.provides: CMakeFiles/test_common_area.dir/src/common_area.cpp.o.requires
+	$(MAKE) -f CMakeFiles/test_common_area.dir/build.make CMakeFiles/test_common_area.dir/src/common_area.cpp.o.provides.build
+.PHONY : CMakeFiles/test_common_area.dir/src/common_area.cpp.o.provides
+
+CMakeFiles/test_common_area.dir/src/common_area.cpp.o.provides.build: CMakeFiles/test_common_area.dir/src/common_area.cpp.o
+
+
+CMakeFiles/test_common_area.dir/src/cloud2map.cpp.o: CMakeFiles/test_common_area.dir/flags.make
+CMakeFiles/test_common_area.dir/src/cloud2map.cpp.o: ../src/cloud2map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_common_area.dir/src/cloud2map.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_common_area.dir/src/cloud2map.cpp.o -c /home/bohuan/catkin_test/src/map/src/cloud2map.cpp
+
+CMakeFiles/test_common_area.dir/src/cloud2map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_common_area.dir/src/cloud2map.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bohuan/catkin_test/src/map/src/cloud2map.cpp > CMakeFiles/test_common_area.dir/src/cloud2map.cpp.i
+
+CMakeFiles/test_common_area.dir/src/cloud2map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_common_area.dir/src/cloud2map.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bohuan/catkin_test/src/map/src/cloud2map.cpp -o CMakeFiles/test_common_area.dir/src/cloud2map.cpp.s
+
+CMakeFiles/test_common_area.dir/src/cloud2map.cpp.o.requires:
+
+.PHONY : CMakeFiles/test_common_area.dir/src/cloud2map.cpp.o.requires
+
+CMakeFiles/test_common_area.dir/src/cloud2map.cpp.o.provides: CMakeFiles/test_common_area.dir/src/cloud2map.cpp.o.requires
+	$(MAKE) -f CMakeFiles/test_common_area.dir/build.make CMakeFiles/test_common_area.dir/src/cloud2map.cpp.o.provides.build
+.PHONY : CMakeFiles/test_common_area.dir/src/cloud2map.cpp.o.provides
+
+CMakeFiles/test_common_area.dir/src/cloud2map.cpp.o.provides.build: CMakeFiles/test_common_area.dir/src/cloud2map.cpp.o
+
+
 # Object files for target test_common_area
 test_common_area_OBJECTS = \
-"CMakeFiles/test_common_area.dir/sample/test_common_area.cpp.o"
+"CMakeFiles/test_common_area.dir/sample/test_common_area.cpp.o" \
+"CMakeFiles/test_common_area.dir/src/common_area.cpp.o" \
+"CMakeFiles/test_common_area.dir/src/cloud2map.cpp.o"
 
 # External object files for target test_common_area
 test_common_area_EXTERNAL_OBJECTS =
 
 devel/lib/map_core/test_common_area: CMakeFiles/test_common_area.dir/sample/test_common_area.cpp.o
+devel/lib/map_core/test_common_area: CMakeFiles/test_common_area.dir/src/common_area.cpp.o
+devel/lib/map_core/test_common_area: CMakeFiles/test_common_area.dir/src/cloud2map.cpp.o
 devel/lib/map_core/test_common_area: CMakeFiles/test_common_area.dir/build.make
 devel/lib/map_core/test_common_area: /usr/local/lib/libpointmatcher.so
 devel/lib/map_core/test_common_area: /usr/lib/x86_64-linux-gnu/libboost_thread.so
@@ -586,7 +638,7 @@ devel/lib/map_core/test_common_area: /opt/ros/kinetic/lib/libopencv_imgcodecs3.s
 devel/lib/map_core/test_common_area: /opt/ros/kinetic/lib/libopencv_imgproc3.so.3.2.0
 devel/lib/map_core/test_common_area: /opt/ros/kinetic/lib/libopencv_core3.so.3.2.0
 devel/lib/map_core/test_common_area: CMakeFiles/test_common_area.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable devel/lib/map_core/test_common_area"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable devel/lib/map_core/test_common_area"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_common_area.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -595,6 +647,8 @@ CMakeFiles/test_common_area.dir/build: devel/lib/map_core/test_common_area
 .PHONY : CMakeFiles/test_common_area.dir/build
 
 CMakeFiles/test_common_area.dir/requires: CMakeFiles/test_common_area.dir/sample/test_common_area.cpp.o.requires
+CMakeFiles/test_common_area.dir/requires: CMakeFiles/test_common_area.dir/src/common_area.cpp.o.requires
+CMakeFiles/test_common_area.dir/requires: CMakeFiles/test_common_area.dir/src/cloud2map.cpp.o.requires
 
 .PHONY : CMakeFiles/test_common_area.dir/requires
 

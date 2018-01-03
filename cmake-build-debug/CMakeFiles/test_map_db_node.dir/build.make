@@ -105,16 +105,68 @@ CMakeFiles/test_map_db_node.dir/src/point_cloud.cpp.o.provides: CMakeFiles/test_
 CMakeFiles/test_map_db_node.dir/src/point_cloud.cpp.o.provides.build: CMakeFiles/test_map_db_node.dir/src/point_cloud.cpp.o
 
 
+CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.o: CMakeFiles/test_map_db_node.dir/flags.make
+CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.o: ../src/map_db_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.o -c /home/bohuan/catkin_test/src/map/src/map_db_node.cpp
+
+CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bohuan/catkin_test/src/map/src/map_db_node.cpp > CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.i
+
+CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bohuan/catkin_test/src/map/src/map_db_node.cpp -o CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.s
+
+CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.o.requires:
+
+.PHONY : CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.o.requires
+
+CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.o.provides: CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.o.requires
+	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.o.provides.build
+.PHONY : CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.o.provides
+
+CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.o.provides.build: CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.o
+
+
+CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.o: CMakeFiles/test_map_db_node.dir/flags.make
+CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.o: ../src/cloud2map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.o -c /home/bohuan/catkin_test/src/map/src/cloud2map.cpp
+
+CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bohuan/catkin_test/src/map/src/cloud2map.cpp > CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.i
+
+CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bohuan/catkin_test/src/map/src/cloud2map.cpp -o CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.s
+
+CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.o.requires:
+
+.PHONY : CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.o.requires
+
+CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.o.provides: CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.o.requires
+	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.o.provides.build
+.PHONY : CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.o.provides
+
+CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.o.provides.build: CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.o
+
+
 # Object files for target test_map_db_node
 test_map_db_node_OBJECTS = \
 "CMakeFiles/test_map_db_node.dir/sample/test_map_db_node.cpp.o" \
-"CMakeFiles/test_map_db_node.dir/src/point_cloud.cpp.o"
+"CMakeFiles/test_map_db_node.dir/src/point_cloud.cpp.o" \
+"CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.o" \
+"CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.o"
 
 # External object files for target test_map_db_node
 test_map_db_node_EXTERNAL_OBJECTS =
 
 devel/lib/map_core/test_map_db_node: CMakeFiles/test_map_db_node.dir/sample/test_map_db_node.cpp.o
 devel/lib/map_core/test_map_db_node: CMakeFiles/test_map_db_node.dir/src/point_cloud.cpp.o
+devel/lib/map_core/test_map_db_node: CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.o
+devel/lib/map_core/test_map_db_node: CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.o
 devel/lib/map_core/test_map_db_node: CMakeFiles/test_map_db_node.dir/build.make
 devel/lib/map_core/test_map_db_node: /usr/local/lib/libpointmatcher.so
 devel/lib/map_core/test_map_db_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
@@ -612,7 +664,7 @@ devel/lib/map_core/test_map_db_node: /opt/ros/kinetic/lib/libopencv_imgcodecs3.s
 devel/lib/map_core/test_map_db_node: /opt/ros/kinetic/lib/libopencv_imgproc3.so.3.2.0
 devel/lib/map_core/test_map_db_node: /opt/ros/kinetic/lib/libopencv_core3.so.3.2.0
 devel/lib/map_core/test_map_db_node: CMakeFiles/test_map_db_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable devel/lib/map_core/test_map_db_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable devel/lib/map_core/test_map_db_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_map_db_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -622,6 +674,8 @@ CMakeFiles/test_map_db_node.dir/build: devel/lib/map_core/test_map_db_node
 
 CMakeFiles/test_map_db_node.dir/requires: CMakeFiles/test_map_db_node.dir/sample/test_map_db_node.cpp.o.requires
 CMakeFiles/test_map_db_node.dir/requires: CMakeFiles/test_map_db_node.dir/src/point_cloud.cpp.o.requires
+CMakeFiles/test_map_db_node.dir/requires: CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.o.requires
+CMakeFiles/test_map_db_node.dir/requires: CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.o.requires
 
 .PHONY : CMakeFiles/test_map_db_node.dir/requires
 

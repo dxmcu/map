@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/bohuan/catkin_test/src/map/sample/test_cloud2map.cpp" "/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles/test_cloud2map.dir/sample/test_cloud2map.cpp.o"
+  "/home/bohuan/catkin_test/src/map/src/cloud2map.cpp" "/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles/test_cloud2map.dir/src/cloud2map.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

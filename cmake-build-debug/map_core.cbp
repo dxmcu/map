@@ -1687,8 +1687,29 @@
 		<Unit filename="/home/bohuan/catkin_test/src/map/sample/test_map_db_node.cpp">
 			<Option target="test_map_db_node"/>
 		</Unit>
+		<Unit filename="/home/bohuan/catkin_test/src/map/src/EdgeInfo.cpp">
+			<Option target="test_map_core"/>
+		</Unit>
+		<Unit filename="/home/bohuan/catkin_test/src/map/src/NodeInfo.cpp">
+			<Option target="test_map_core"/>
+		</Unit>
+		<Unit filename="/home/bohuan/catkin_test/src/map/src/cloud2map.cpp">
+			<Option target="test_map_core"/>
+			<Option target="test_cloud2map"/>
+			<Option target="test_map_db_node"/>
+			<Option target="test_cv2grid"/>
+			<Option target="test_common_area"/>
+		</Unit>
+		<Unit filename="/home/bohuan/catkin_test/src/map/src/common_area.cpp">
+			<Option target="test_map_core"/>
+			<Option target="test_common_area"/>
+		</Unit>
 		<Unit filename="/home/bohuan/catkin_test/src/map/src/map_core.cpp">
 			<Option target="test_map_core"/>
+		</Unit>
+		<Unit filename="/home/bohuan/catkin_test/src/map/src/map_db_node.cpp">
+			<Option target="test_map_core"/>
+			<Option target="test_map_db_node"/>
 		</Unit>
 		<Unit filename="/home/bohuan/catkin_test/src/map/src/point_cloud.cpp">
 			<Option target="test_map_core"/>

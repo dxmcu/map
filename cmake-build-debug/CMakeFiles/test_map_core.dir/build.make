@@ -129,11 +129,136 @@ CMakeFiles/test_map_core.dir/src/point_cloud.cpp.o.provides: CMakeFiles/test_map
 CMakeFiles/test_map_core.dir/src/point_cloud.cpp.o.provides.build: CMakeFiles/test_map_core.dir/src/point_cloud.cpp.o
 
 
+CMakeFiles/test_map_core.dir/src/common_area.cpp.o: CMakeFiles/test_map_core.dir/flags.make
+CMakeFiles/test_map_core.dir/src/common_area.cpp.o: ../src/common_area.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test_map_core.dir/src/common_area.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_map_core.dir/src/common_area.cpp.o -c /home/bohuan/catkin_test/src/map/src/common_area.cpp
+
+CMakeFiles/test_map_core.dir/src/common_area.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_map_core.dir/src/common_area.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bohuan/catkin_test/src/map/src/common_area.cpp > CMakeFiles/test_map_core.dir/src/common_area.cpp.i
+
+CMakeFiles/test_map_core.dir/src/common_area.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_map_core.dir/src/common_area.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bohuan/catkin_test/src/map/src/common_area.cpp -o CMakeFiles/test_map_core.dir/src/common_area.cpp.s
+
+CMakeFiles/test_map_core.dir/src/common_area.cpp.o.requires:
+
+.PHONY : CMakeFiles/test_map_core.dir/src/common_area.cpp.o.requires
+
+CMakeFiles/test_map_core.dir/src/common_area.cpp.o.provides: CMakeFiles/test_map_core.dir/src/common_area.cpp.o.requires
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/common_area.cpp.o.provides.build
+.PHONY : CMakeFiles/test_map_core.dir/src/common_area.cpp.o.provides
+
+CMakeFiles/test_map_core.dir/src/common_area.cpp.o.provides.build: CMakeFiles/test_map_core.dir/src/common_area.cpp.o
+
+
+CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.o: CMakeFiles/test_map_core.dir/flags.make
+CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.o: ../src/EdgeInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.o -c /home/bohuan/catkin_test/src/map/src/EdgeInfo.cpp
+
+CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bohuan/catkin_test/src/map/src/EdgeInfo.cpp > CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.i
+
+CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bohuan/catkin_test/src/map/src/EdgeInfo.cpp -o CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.s
+
+CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.o.requires:
+
+.PHONY : CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.o.requires
+
+CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.o.provides: CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.o.requires
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.o.provides.build
+.PHONY : CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.o.provides
+
+CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.o.provides.build: CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.o
+
+
+CMakeFiles/test_map_core.dir/src/map_db_node.cpp.o: CMakeFiles/test_map_core.dir/flags.make
+CMakeFiles/test_map_core.dir/src/map_db_node.cpp.o: ../src/map_db_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test_map_core.dir/src/map_db_node.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_map_core.dir/src/map_db_node.cpp.o -c /home/bohuan/catkin_test/src/map/src/map_db_node.cpp
+
+CMakeFiles/test_map_core.dir/src/map_db_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_map_core.dir/src/map_db_node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bohuan/catkin_test/src/map/src/map_db_node.cpp > CMakeFiles/test_map_core.dir/src/map_db_node.cpp.i
+
+CMakeFiles/test_map_core.dir/src/map_db_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_map_core.dir/src/map_db_node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bohuan/catkin_test/src/map/src/map_db_node.cpp -o CMakeFiles/test_map_core.dir/src/map_db_node.cpp.s
+
+CMakeFiles/test_map_core.dir/src/map_db_node.cpp.o.requires:
+
+.PHONY : CMakeFiles/test_map_core.dir/src/map_db_node.cpp.o.requires
+
+CMakeFiles/test_map_core.dir/src/map_db_node.cpp.o.provides: CMakeFiles/test_map_core.dir/src/map_db_node.cpp.o.requires
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/map_db_node.cpp.o.provides.build
+.PHONY : CMakeFiles/test_map_core.dir/src/map_db_node.cpp.o.provides
+
+CMakeFiles/test_map_core.dir/src/map_db_node.cpp.o.provides.build: CMakeFiles/test_map_core.dir/src/map_db_node.cpp.o
+
+
+CMakeFiles/test_map_core.dir/src/cloud2map.cpp.o: CMakeFiles/test_map_core.dir/flags.make
+CMakeFiles/test_map_core.dir/src/cloud2map.cpp.o: ../src/cloud2map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test_map_core.dir/src/cloud2map.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_map_core.dir/src/cloud2map.cpp.o -c /home/bohuan/catkin_test/src/map/src/cloud2map.cpp
+
+CMakeFiles/test_map_core.dir/src/cloud2map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_map_core.dir/src/cloud2map.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bohuan/catkin_test/src/map/src/cloud2map.cpp > CMakeFiles/test_map_core.dir/src/cloud2map.cpp.i
+
+CMakeFiles/test_map_core.dir/src/cloud2map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_map_core.dir/src/cloud2map.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bohuan/catkin_test/src/map/src/cloud2map.cpp -o CMakeFiles/test_map_core.dir/src/cloud2map.cpp.s
+
+CMakeFiles/test_map_core.dir/src/cloud2map.cpp.o.requires:
+
+.PHONY : CMakeFiles/test_map_core.dir/src/cloud2map.cpp.o.requires
+
+CMakeFiles/test_map_core.dir/src/cloud2map.cpp.o.provides: CMakeFiles/test_map_core.dir/src/cloud2map.cpp.o.requires
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/cloud2map.cpp.o.provides.build
+.PHONY : CMakeFiles/test_map_core.dir/src/cloud2map.cpp.o.provides
+
+CMakeFiles/test_map_core.dir/src/cloud2map.cpp.o.provides.build: CMakeFiles/test_map_core.dir/src/cloud2map.cpp.o
+
+
+CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.o: CMakeFiles/test_map_core.dir/flags.make
+CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.o: ../src/NodeInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.o -c /home/bohuan/catkin_test/src/map/src/NodeInfo.cpp
+
+CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bohuan/catkin_test/src/map/src/NodeInfo.cpp > CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.i
+
+CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bohuan/catkin_test/src/map/src/NodeInfo.cpp -o CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.s
+
+CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.o.requires:
+
+.PHONY : CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.o.requires
+
+CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.o.provides: CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.o.requires
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.o.provides.build
+.PHONY : CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.o.provides
+
+CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.o.provides.build: CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.o
+
+
 # Object files for target test_map_core
 test_map_core_OBJECTS = \
 "CMakeFiles/test_map_core.dir/sample/test_map_core.cpp.o" \
 "CMakeFiles/test_map_core.dir/src/map_core.cpp.o" \
-"CMakeFiles/test_map_core.dir/src/point_cloud.cpp.o"
+"CMakeFiles/test_map_core.dir/src/point_cloud.cpp.o" \
+"CMakeFiles/test_map_core.dir/src/common_area.cpp.o" \
+"CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.o" \
+"CMakeFiles/test_map_core.dir/src/map_db_node.cpp.o" \
+"CMakeFiles/test_map_core.dir/src/cloud2map.cpp.o" \
+"CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.o"
 
 # External object files for target test_map_core
 test_map_core_EXTERNAL_OBJECTS =
@@ -141,6 +266,11 @@ test_map_core_EXTERNAL_OBJECTS =
 devel/lib/map_core/test_map_core: CMakeFiles/test_map_core.dir/sample/test_map_core.cpp.o
 devel/lib/map_core/test_map_core: CMakeFiles/test_map_core.dir/src/map_core.cpp.o
 devel/lib/map_core/test_map_core: CMakeFiles/test_map_core.dir/src/point_cloud.cpp.o
+devel/lib/map_core/test_map_core: CMakeFiles/test_map_core.dir/src/common_area.cpp.o
+devel/lib/map_core/test_map_core: CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.o
+devel/lib/map_core/test_map_core: CMakeFiles/test_map_core.dir/src/map_db_node.cpp.o
+devel/lib/map_core/test_map_core: CMakeFiles/test_map_core.dir/src/cloud2map.cpp.o
+devel/lib/map_core/test_map_core: CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.o
 devel/lib/map_core/test_map_core: CMakeFiles/test_map_core.dir/build.make
 devel/lib/map_core/test_map_core: /usr/local/lib/libpointmatcher.so
 devel/lib/map_core/test_map_core: /usr/lib/x86_64-linux-gnu/libboost_thread.so
@@ -638,7 +768,7 @@ devel/lib/map_core/test_map_core: /opt/ros/kinetic/lib/libopencv_imgcodecs3.so.3
 devel/lib/map_core/test_map_core: /opt/ros/kinetic/lib/libopencv_imgproc3.so.3.2.0
 devel/lib/map_core/test_map_core: /opt/ros/kinetic/lib/libopencv_core3.so.3.2.0
 devel/lib/map_core/test_map_core: CMakeFiles/test_map_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable devel/lib/map_core/test_map_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable devel/lib/map_core/test_map_core"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_map_core.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -649,6 +779,11 @@ CMakeFiles/test_map_core.dir/build: devel/lib/map_core/test_map_core
 CMakeFiles/test_map_core.dir/requires: CMakeFiles/test_map_core.dir/sample/test_map_core.cpp.o.requires
 CMakeFiles/test_map_core.dir/requires: CMakeFiles/test_map_core.dir/src/map_core.cpp.o.requires
 CMakeFiles/test_map_core.dir/requires: CMakeFiles/test_map_core.dir/src/point_cloud.cpp.o.requires
+CMakeFiles/test_map_core.dir/requires: CMakeFiles/test_map_core.dir/src/common_area.cpp.o.requires
+CMakeFiles/test_map_core.dir/requires: CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.o.requires
+CMakeFiles/test_map_core.dir/requires: CMakeFiles/test_map_core.dir/src/map_db_node.cpp.o.requires
+CMakeFiles/test_map_core.dir/requires: CMakeFiles/test_map_core.dir/src/cloud2map.cpp.o.requires
+CMakeFiles/test_map_core.dir/requires: CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.o.requires
 
 .PHONY : CMakeFiles/test_map_core.dir/requires
 

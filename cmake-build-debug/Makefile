@@ -1693,6 +1693,129 @@ sample/test_map_db_node.cpp.s:
 	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/sample/test_map_db_node.cpp.s
 .PHONY : sample/test_map_db_node.cpp.s
 
+src/EdgeInfo.o: src/EdgeInfo.cpp.o
+
+.PHONY : src/EdgeInfo.o
+
+# target to build an object file
+src/EdgeInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.o
+.PHONY : src/EdgeInfo.cpp.o
+
+src/EdgeInfo.i: src/EdgeInfo.cpp.i
+
+.PHONY : src/EdgeInfo.i
+
+# target to preprocess a source file
+src/EdgeInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.i
+.PHONY : src/EdgeInfo.cpp.i
+
+src/EdgeInfo.s: src/EdgeInfo.cpp.s
+
+.PHONY : src/EdgeInfo.s
+
+# target to generate assembly for a file
+src/EdgeInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/EdgeInfo.cpp.s
+.PHONY : src/EdgeInfo.cpp.s
+
+src/NodeInfo.o: src/NodeInfo.cpp.o
+
+.PHONY : src/NodeInfo.o
+
+# target to build an object file
+src/NodeInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.o
+.PHONY : src/NodeInfo.cpp.o
+
+src/NodeInfo.i: src/NodeInfo.cpp.i
+
+.PHONY : src/NodeInfo.i
+
+# target to preprocess a source file
+src/NodeInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.i
+.PHONY : src/NodeInfo.cpp.i
+
+src/NodeInfo.s: src/NodeInfo.cpp.s
+
+.PHONY : src/NodeInfo.s
+
+# target to generate assembly for a file
+src/NodeInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/NodeInfo.cpp.s
+.PHONY : src/NodeInfo.cpp.s
+
+src/cloud2map.o: src/cloud2map.cpp.o
+
+.PHONY : src/cloud2map.o
+
+# target to build an object file
+src/cloud2map.cpp.o:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/cloud2map.cpp.o
+	$(MAKE) -f CMakeFiles/test_cloud2map.dir/build.make CMakeFiles/test_cloud2map.dir/src/cloud2map.cpp.o
+	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.o
+	$(MAKE) -f CMakeFiles/test_cv2grid.dir/build.make CMakeFiles/test_cv2grid.dir/src/cloud2map.cpp.o
+	$(MAKE) -f CMakeFiles/test_common_area.dir/build.make CMakeFiles/test_common_area.dir/src/cloud2map.cpp.o
+.PHONY : src/cloud2map.cpp.o
+
+src/cloud2map.i: src/cloud2map.cpp.i
+
+.PHONY : src/cloud2map.i
+
+# target to preprocess a source file
+src/cloud2map.cpp.i:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/cloud2map.cpp.i
+	$(MAKE) -f CMakeFiles/test_cloud2map.dir/build.make CMakeFiles/test_cloud2map.dir/src/cloud2map.cpp.i
+	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.i
+	$(MAKE) -f CMakeFiles/test_cv2grid.dir/build.make CMakeFiles/test_cv2grid.dir/src/cloud2map.cpp.i
+	$(MAKE) -f CMakeFiles/test_common_area.dir/build.make CMakeFiles/test_common_area.dir/src/cloud2map.cpp.i
+.PHONY : src/cloud2map.cpp.i
+
+src/cloud2map.s: src/cloud2map.cpp.s
+
+.PHONY : src/cloud2map.s
+
+# target to generate assembly for a file
+src/cloud2map.cpp.s:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/cloud2map.cpp.s
+	$(MAKE) -f CMakeFiles/test_cloud2map.dir/build.make CMakeFiles/test_cloud2map.dir/src/cloud2map.cpp.s
+	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/cloud2map.cpp.s
+	$(MAKE) -f CMakeFiles/test_cv2grid.dir/build.make CMakeFiles/test_cv2grid.dir/src/cloud2map.cpp.s
+	$(MAKE) -f CMakeFiles/test_common_area.dir/build.make CMakeFiles/test_common_area.dir/src/cloud2map.cpp.s
+.PHONY : src/cloud2map.cpp.s
+
+src/common_area.o: src/common_area.cpp.o
+
+.PHONY : src/common_area.o
+
+# target to build an object file
+src/common_area.cpp.o:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/common_area.cpp.o
+	$(MAKE) -f CMakeFiles/test_common_area.dir/build.make CMakeFiles/test_common_area.dir/src/common_area.cpp.o
+.PHONY : src/common_area.cpp.o
+
+src/common_area.i: src/common_area.cpp.i
+
+.PHONY : src/common_area.i
+
+# target to preprocess a source file
+src/common_area.cpp.i:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/common_area.cpp.i
+	$(MAKE) -f CMakeFiles/test_common_area.dir/build.make CMakeFiles/test_common_area.dir/src/common_area.cpp.i
+.PHONY : src/common_area.cpp.i
+
+src/common_area.s: src/common_area.cpp.s
+
+.PHONY : src/common_area.s
+
+# target to generate assembly for a file
+src/common_area.cpp.s:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/common_area.cpp.s
+	$(MAKE) -f CMakeFiles/test_common_area.dir/build.make CMakeFiles/test_common_area.dir/src/common_area.cpp.s
+.PHONY : src/common_area.cpp.s
+
 src/map_core.o: src/map_core.cpp.o
 
 .PHONY : src/map_core.o
@@ -1719,6 +1842,36 @@ src/map_core.s: src/map_core.cpp.s
 src/map_core.cpp.s:
 	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/map_core.cpp.s
 .PHONY : src/map_core.cpp.s
+
+src/map_db_node.o: src/map_db_node.cpp.o
+
+.PHONY : src/map_db_node.o
+
+# target to build an object file
+src/map_db_node.cpp.o:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/map_db_node.cpp.o
+	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.o
+.PHONY : src/map_db_node.cpp.o
+
+src/map_db_node.i: src/map_db_node.cpp.i
+
+.PHONY : src/map_db_node.i
+
+# target to preprocess a source file
+src/map_db_node.cpp.i:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/map_db_node.cpp.i
+	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.i
+.PHONY : src/map_db_node.cpp.i
+
+src/map_db_node.s: src/map_db_node.cpp.s
+
+.PHONY : src/map_db_node.s
+
+# target to generate assembly for a file
+src/map_db_node.cpp.s:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/map_db_node.cpp.s
+	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/map_db_node.cpp.s
+.PHONY : src/map_db_node.cpp.s
 
 src/point_cloud.o: src/point_cloud.cpp.o
 
@@ -1885,9 +2038,24 @@ help:
 	@echo "... sample/test_map_db_node.o"
 	@echo "... sample/test_map_db_node.i"
 	@echo "... sample/test_map_db_node.s"
+	@echo "... src/EdgeInfo.o"
+	@echo "... src/EdgeInfo.i"
+	@echo "... src/EdgeInfo.s"
+	@echo "... src/NodeInfo.o"
+	@echo "... src/NodeInfo.i"
+	@echo "... src/NodeInfo.s"
+	@echo "... src/cloud2map.o"
+	@echo "... src/cloud2map.i"
+	@echo "... src/cloud2map.s"
+	@echo "... src/common_area.o"
+	@echo "... src/common_area.i"
+	@echo "... src/common_area.s"
 	@echo "... src/map_core.o"
 	@echo "... src/map_core.i"
 	@echo "... src/map_core.s"
+	@echo "... src/map_db_node.o"
+	@echo "... src/map_db_node.i"
+	@echo "... src/map_db_node.s"
 	@echo "... src/point_cloud.o"
 	@echo "... src/point_cloud.i"
 	@echo "... src/point_cloud.s"

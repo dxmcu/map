@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_cv2grid.dir/sample/test_cv2grid.cpp.o"
+  "CMakeFiles/test_cv2grid.dir/src/cloud2map.cpp.o"
   "devel/lib/map_core/test_cv2grid.pdb"
   "devel/lib/map_core/test_cv2grid"
 )
