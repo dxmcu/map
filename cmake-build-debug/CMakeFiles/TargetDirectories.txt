@@ -1,7 +1,7 @@
 /home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles/install/strip.dir
 /home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles/install/local.dir
 /home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles/map.dir
+/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles/test_map_core.dir
 /home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles/test_cloud2map.dir
 /home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles/test_map_db_node.dir
 /home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles/map_core_gennodejs.dir

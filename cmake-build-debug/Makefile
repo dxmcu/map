@@ -168,17 +168,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named map
+# Target rules for targets named test_map_core
 
 # Build rule for target.
-map: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 map
-.PHONY : map
+test_map_core: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_map_core
+.PHONY : test_map_core
 
 # fast build rule for target.
-map/fast:
-	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/build
-.PHONY : map/fast
+test_map_core/fast:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/build
+.PHONY : test_map_core/fast
 
 #=============================================================================
 # Target rules for targets named test_cloud2map
@@ -1639,6 +1639,33 @@ sample/test_cv2grid.cpp.s:
 	$(MAKE) -f CMakeFiles/test_cv2grid.dir/build.make CMakeFiles/test_cv2grid.dir/sample/test_cv2grid.cpp.s
 .PHONY : sample/test_cv2grid.cpp.s
 
+sample/test_map_core.o: sample/test_map_core.cpp.o
+
+.PHONY : sample/test_map_core.o
+
+# target to build an object file
+sample/test_map_core.cpp.o:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/sample/test_map_core.cpp.o
+.PHONY : sample/test_map_core.cpp.o
+
+sample/test_map_core.i: sample/test_map_core.cpp.i
+
+.PHONY : sample/test_map_core.i
+
+# target to preprocess a source file
+sample/test_map_core.cpp.i:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/sample/test_map_core.cpp.i
+.PHONY : sample/test_map_core.cpp.i
+
+sample/test_map_core.s: sample/test_map_core.cpp.s
+
+.PHONY : sample/test_map_core.s
+
+# target to generate assembly for a file
+sample/test_map_core.cpp.s:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/sample/test_map_core.cpp.s
+.PHONY : sample/test_map_core.cpp.s
+
 sample/test_map_db_node.o: sample/test_map_db_node.cpp.o
 
 .PHONY : sample/test_map_db_node.o
@@ -1666,32 +1693,32 @@ sample/test_map_db_node.cpp.s:
 	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/sample/test_map_db_node.cpp.s
 .PHONY : sample/test_map_db_node.cpp.s
 
-src/map.o: src/map.cpp.o
+src/map_core.o: src/map_core.cpp.o
 
-.PHONY : src/map.o
+.PHONY : src/map_core.o
 
 # target to build an object file
-src/map.cpp.o:
-	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/src/map.cpp.o
-.PHONY : src/map.cpp.o
+src/map_core.cpp.o:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/map_core.cpp.o
+.PHONY : src/map_core.cpp.o
 
-src/map.i: src/map.cpp.i
+src/map_core.i: src/map_core.cpp.i
 
-.PHONY : src/map.i
+.PHONY : src/map_core.i
 
 # target to preprocess a source file
-src/map.cpp.i:
-	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/src/map.cpp.i
-.PHONY : src/map.cpp.i
+src/map_core.cpp.i:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/map_core.cpp.i
+.PHONY : src/map_core.cpp.i
 
-src/map.s: src/map.cpp.s
+src/map_core.s: src/map_core.cpp.s
 
-.PHONY : src/map.s
+.PHONY : src/map_core.s
 
 # target to generate assembly for a file
-src/map.cpp.s:
-	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/src/map.cpp.s
-.PHONY : src/map.cpp.s
+src/map_core.cpp.s:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/map_core.cpp.s
+.PHONY : src/map_core.cpp.s
 
 src/point_cloud.o: src/point_cloud.cpp.o
 
@@ -1699,7 +1726,7 @@ src/point_cloud.o: src/point_cloud.cpp.o
 
 # target to build an object file
 src/point_cloud.cpp.o:
-	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/src/point_cloud.cpp.o
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/point_cloud.cpp.o
 	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/point_cloud.cpp.o
 .PHONY : src/point_cloud.cpp.o
 
@@ -1709,7 +1736,7 @@ src/point_cloud.i: src/point_cloud.cpp.i
 
 # target to preprocess a source file
 src/point_cloud.cpp.i:
-	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/src/point_cloud.cpp.i
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/point_cloud.cpp.i
 	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/point_cloud.cpp.i
 .PHONY : src/point_cloud.cpp.i
 
@@ -1719,7 +1746,7 @@ src/point_cloud.s: src/point_cloud.cpp.s
 
 # target to generate assembly for a file
 src/point_cloud.cpp.s:
-	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/src/point_cloud.cpp.s
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/src/point_cloud.cpp.s
 	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/src/point_cloud.cpp.s
 .PHONY : src/point_cloud.cpp.s
 
@@ -1732,7 +1759,7 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... rebuild_cache"
-	@echo "... map"
+	@echo "... test_map_core"
 	@echo "... test_cloud2map"
 	@echo "... test_map_db_node"
 	@echo "... map_core_gennodejs"
@@ -1852,12 +1879,15 @@ help:
 	@echo "... sample/test_cv2grid.o"
 	@echo "... sample/test_cv2grid.i"
 	@echo "... sample/test_cv2grid.s"
+	@echo "... sample/test_map_core.o"
+	@echo "... sample/test_map_core.i"
+	@echo "... sample/test_map_core.s"
 	@echo "... sample/test_map_db_node.o"
 	@echo "... sample/test_map_db_node.i"
 	@echo "... sample/test_map_db_node.s"
-	@echo "... src/map.o"
-	@echo "... src/map.i"
-	@echo "... src/map.s"
+	@echo "... src/map_core.o"
+	@echo "... src/map_core.i"
+	@echo "... src/map_core.s"
 	@echo "... src/point_cloud.o"
 	@echo "... src/point_cloud.i"
 	@echo "... src/point_cloud.s"

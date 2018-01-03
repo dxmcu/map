@@ -60,125 +60,125 @@ CMAKE_SOURCE_DIR = /home/bohuan/catkin_test/src/map
 CMAKE_BINARY_DIR = /home/bohuan/catkin_test/src/map/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/map.dir
+# Target rules for target CMakeFiles/test_map_core.dir
 
 # All Build rule for target.
-CMakeFiles/map.dir/all: CMakeFiles/map_core_generate_messages_nodejs.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/actionlib_generate_messages_nodejs.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/pcl_msgs_generate_messages_eus.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/bond_generate_messages_lisp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/nodelet_generate_messages_eus.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/topic_tools_generate_messages_cpp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/topic_tools_generate_messages_eus.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/bond_generate_messages_eus.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/roscpp_generate_messages_eus.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/nodelet_generate_messages_nodejs.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/map_core_generate_messages_py.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/dynamic_reconfigure_gencfg.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/pcl_msgs_generate_messages_py.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/bond_generate_messages_nodejs.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/nodelet_generate_messages_py.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/nodelet_generate_messages_cpp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/map_core_generate_messages_cpp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/bond_generate_messages_py.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/std_srvs_generate_messages_lisp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/std_srvs_generate_messages_eus.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/tf_generate_messages_cpp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/bond_generate_messages_cpp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/nodelet_generate_messages_lisp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/roscpp_generate_messages_py.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/tf_generate_messages_lisp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/std_msgs_generate_messages_py.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/nav_msgs_generate_messages_py.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/roscpp_generate_messages_lisp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/tf_generate_messages_nodejs.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/std_srvs_generate_messages_py.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/actionlib_generate_messages_cpp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/std_srvs_generate_messages_cpp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/topic_tools_generate_messages_lisp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/topic_tools_generate_messages_nodejs.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/topic_tools_generate_messages_py.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/tf2_msgs_generate_messages_py.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/tf_generate_messages_eus.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/tf_generate_messages_py.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/std_msgs_generate_messages_eus.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/actionlib_generate_messages_eus.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/actionlib_generate_messages_lisp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/map_core_generate_messages_lisp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/actionlib_generate_messages_py.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/pcl_ros_gencfg.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/nav_msgs_generate_messages_eus.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/roscpp_generate_messages_cpp.dir/all
-CMakeFiles/map.dir/all: CMakeFiles/map_core_generate_messages_eus.dir/all
-	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/depend
-	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=5,6,7 "Built target map"
-.PHONY : CMakeFiles/map.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/map_core_generate_messages_nodejs.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/actionlib_generate_messages_nodejs.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/pcl_msgs_generate_messages_eus.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/bond_generate_messages_lisp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/nodelet_generate_messages_eus.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/topic_tools_generate_messages_cpp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/topic_tools_generate_messages_eus.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/bond_generate_messages_eus.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/roscpp_generate_messages_eus.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/nodelet_generate_messages_nodejs.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/map_core_generate_messages_py.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/dynamic_reconfigure_gencfg.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/pcl_msgs_generate_messages_py.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/bond_generate_messages_nodejs.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/nodelet_generate_messages_py.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/nodelet_generate_messages_cpp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/map_core_generate_messages_cpp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/bond_generate_messages_py.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/std_srvs_generate_messages_lisp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/std_srvs_generate_messages_eus.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/tf_generate_messages_cpp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/bond_generate_messages_cpp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/nodelet_generate_messages_lisp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/roscpp_generate_messages_py.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/tf_generate_messages_lisp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/std_msgs_generate_messages_py.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/nav_msgs_generate_messages_py.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/roscpp_generate_messages_lisp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/tf_generate_messages_nodejs.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/std_srvs_generate_messages_py.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/actionlib_generate_messages_cpp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/std_srvs_generate_messages_cpp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/topic_tools_generate_messages_lisp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/topic_tools_generate_messages_nodejs.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/topic_tools_generate_messages_py.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/tf2_msgs_generate_messages_py.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/tf_generate_messages_eus.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/tf_generate_messages_py.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/std_msgs_generate_messages_eus.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/actionlib_generate_messages_eus.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/actionlib_generate_messages_lisp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/map_core_generate_messages_lisp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/actionlib_generate_messages_py.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/pcl_ros_gencfg.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/nav_msgs_generate_messages_eus.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/roscpp_generate_messages_cpp.dir/all
+CMakeFiles/test_map_core.dir/all: CMakeFiles/map_core_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/depend
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=18,19,20,21 "Built target test_map_core"
+.PHONY : CMakeFiles/test_map_core.dir/all
 
 # Include target in all.
-all: CMakeFiles/map.dir/all
+all: CMakeFiles/test_map_core.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/map.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles 10
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/map.dir/all
+CMakeFiles/test_map_core.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_map_core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/map.dir/rule
+.PHONY : CMakeFiles/test_map_core.dir/rule
 
 # Convenience name for target.
-map: CMakeFiles/map.dir/rule
+test_map_core: CMakeFiles/test_map_core.dir/rule
 
-.PHONY : map
-
-# clean rule for target.
-CMakeFiles/map.dir/clean:
-	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/clean
-.PHONY : CMakeFiles/map.dir/clean
+.PHONY : test_map_core
 
 # clean rule for target.
-clean: CMakeFiles/map.dir/clean
+CMakeFiles/test_map_core.dir/clean:
+	$(MAKE) -f CMakeFiles/test_map_core.dir/build.make CMakeFiles/test_map_core.dir/clean
+.PHONY : CMakeFiles/test_map_core.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_map_core.dir/clean
 
 .PHONY : clean
 
@@ -275,7 +275,7 @@ CMakeFiles/test_cloud2map.dir/all: CMakeFiles/roscpp_generate_messages_cpp.dir/a
 CMakeFiles/test_cloud2map.dir/all: CMakeFiles/map_core_generate_messages_eus.dir/all
 	$(MAKE) -f CMakeFiles/test_cloud2map.dir/build.make CMakeFiles/test_cloud2map.dir/depend
 	$(MAKE) -f CMakeFiles/test_cloud2map.dir/build.make CMakeFiles/test_cloud2map.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target test_cloud2map"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target test_cloud2map"
 .PHONY : CMakeFiles/test_cloud2map.dir/all
 
 # Include target in all.
@@ -398,7 +398,7 @@ CMakeFiles/test_map_db_node.dir/all: CMakeFiles/roscpp_generate_messages_cpp.dir
 CMakeFiles/test_map_db_node.dir/all: CMakeFiles/map_core_generate_messages_eus.dir/all
 	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/depend
 	$(MAKE) -f CMakeFiles/test_map_db_node.dir/build.make CMakeFiles/test_map_db_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=21,22,23 "Built target test_map_db_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=22,23,24 "Built target test_map_db_node"
 .PHONY : CMakeFiles/test_map_db_node.dir/all
 
 # Include target in all.
@@ -469,7 +469,7 @@ CMakeFiles/map_core_generate_messages_nodejs.dir/all: CMakeFiles/sensor_msgs_gen
 CMakeFiles/map_core_generate_messages_nodejs.dir/all: CMakeFiles/_map_core_generate_messages_check_deps_LocalMapRetrieve.dir/all
 	$(MAKE) -f CMakeFiles/map_core_generate_messages_nodejs.dir/build.make CMakeFiles/map_core_generate_messages_nodejs.dir/depend
 	$(MAKE) -f CMakeFiles/map_core_generate_messages_nodejs.dir/build.make CMakeFiles/map_core_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=12 "Built target map_core_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=9 "Built target map_core_generate_messages_nodejs"
 .PHONY : CMakeFiles/map_core_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -983,7 +983,7 @@ CMakeFiles/map_core_generate_messages_py.dir/all: CMakeFiles/sensor_msgs_generat
 CMakeFiles/map_core_generate_messages_py.dir/all: CMakeFiles/_map_core_generate_messages_check_deps_LocalMapRetrieve.dir/all
 	$(MAKE) -f CMakeFiles/map_core_generate_messages_py.dir/build.make CMakeFiles/map_core_generate_messages_py.dir/depend
 	$(MAKE) -f CMakeFiles/map_core_generate_messages_py.dir/build.make CMakeFiles/map_core_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target map_core_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target map_core_generate_messages_py"
 .PHONY : CMakeFiles/map_core_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1369,7 +1369,7 @@ CMakeFiles/map_core_generate_messages_cpp.dir/all: CMakeFiles/std_msgs_generate_
 CMakeFiles/map_core_generate_messages_cpp.dir/all: CMakeFiles/_map_core_generate_messages_check_deps_LocalMapRetrieve.dir/all
 	$(MAKE) -f CMakeFiles/map_core_generate_messages_cpp.dir/build.make CMakeFiles/map_core_generate_messages_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/map_core_generate_messages_cpp.dir/build.make CMakeFiles/map_core_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=8 "Built target map_core_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=5 "Built target map_core_generate_messages_cpp"
 .PHONY : CMakeFiles/map_core_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1967,7 +1967,7 @@ CMakeFiles/test_cv2grid.dir/all: CMakeFiles/roscpp_generate_messages_cpp.dir/all
 CMakeFiles/test_cv2grid.dir/all: CMakeFiles/map_core_generate_messages_eus.dir/all
 	$(MAKE) -f CMakeFiles/test_cv2grid.dir/build.make CMakeFiles/test_cv2grid.dir/depend
 	$(MAKE) -f CMakeFiles/test_cv2grid.dir/build.make CMakeFiles/test_cv2grid.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target test_cv2grid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=16,17 "Built target test_cv2grid"
 .PHONY : CMakeFiles/test_cv2grid.dir/all
 
 # Include target in all.
@@ -2250,7 +2250,7 @@ CMakeFiles/test_common_area.dir/all: CMakeFiles/roscpp_generate_messages_cpp.dir
 CMakeFiles/test_common_area.dir/all: CMakeFiles/map_core_generate_messages_eus.dir/all
 	$(MAKE) -f CMakeFiles/test_common_area.dir/build.make CMakeFiles/test_common_area.dir/depend
 	$(MAKE) -f CMakeFiles/test_common_area.dir/build.make CMakeFiles/test_common_area.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target test_common_area"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=14,15 "Built target test_common_area"
 .PHONY : CMakeFiles/test_common_area.dir/all
 
 # Include target in all.
@@ -3290,7 +3290,7 @@ CMakeFiles/map_core_generate_messages_lisp.dir/all: CMakeFiles/sensor_msgs_gener
 CMakeFiles/map_core_generate_messages_lisp.dir/all: CMakeFiles/_map_core_generate_messages_check_deps_LocalMapRetrieve.dir/all
 	$(MAKE) -f CMakeFiles/map_core_generate_messages_lisp.dir/build.make CMakeFiles/map_core_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/map_core_generate_messages_lisp.dir/build.make CMakeFiles/map_core_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=11 "Built target map_core_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=8 "Built target map_core_generate_messages_lisp"
 .PHONY : CMakeFiles/map_core_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3868,7 +3868,7 @@ CMakeFiles/map_core_generate_messages_eus.dir/all: CMakeFiles/std_msgs_generate_
 CMakeFiles/map_core_generate_messages_eus.dir/all: CMakeFiles/_map_core_generate_messages_check_deps_LocalMapRetrieve.dir/all
 	$(MAKE) -f CMakeFiles/map_core_generate_messages_eus.dir/build.make CMakeFiles/map_core_generate_messages_eus.dir/depend
 	$(MAKE) -f CMakeFiles/map_core_generate_messages_eus.dir/build.make CMakeFiles/map_core_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target map_core_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bohuan/catkin_test/src/map/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target map_core_generate_messages_eus"
 .PHONY : CMakeFiles/map_core_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.

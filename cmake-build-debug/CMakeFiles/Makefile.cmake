@@ -271,7 +271,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/map.dir/DependInfo.cmake"
+  "CMakeFiles/test_map_core.dir/DependInfo.cmake"
   "CMakeFiles/test_cloud2map.dir/DependInfo.cmake"
   "CMakeFiles/test_map_db_node.dir/DependInfo.cmake"
   "CMakeFiles/map_core_gennodejs.dir/DependInfo.cmake"

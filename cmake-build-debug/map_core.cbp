@@ -47,8 +47,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/bohuan/catkin_test/src/map/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="map">
-				<Option output="/home/bohuan/catkin_test/src/map/cmake-build-debug/devel/lib/map_core/map" prefix_auto="0" extension_auto="0"/>
+			<Target title="test_map_core">
+				<Option output="/home/bohuan/catkin_test/src/map/cmake-build-debug/devel/lib/map_core/test_map_core" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/bohuan/catkin_test/src/map/cmake-build-debug/devel/lib/map_core"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -89,14 +89,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/bohuan/catkin_test/src/map/cmake-build-debug/Makefile&quot;  VERBOSE=1 map"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/bohuan/catkin_test/src/map/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_map_core"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/bohuan/catkin_test/src/map/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/bohuan/catkin_test/src/map/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/bohuan/catkin_test/src/map/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="map/fast">
-				<Option output="/home/bohuan/catkin_test/src/map/cmake-build-debug/devel/lib/map_core/map" prefix_auto="0" extension_auto="0"/>
+			<Target title="test_map_core/fast">
+				<Option output="/home/bohuan/catkin_test/src/map/cmake-build-debug/devel/lib/map_core/test_map_core" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/bohuan/catkin_test/src/map/cmake-build-debug/devel/lib/map_core"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -137,7 +137,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/bohuan/catkin_test/src/map/cmake-build-debug/Makefile&quot;  VERBOSE=1 map/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/bohuan/catkin_test/src/map/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_map_core/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/bohuan/catkin_test/src/map/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/bohuan/catkin_test/src/map/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/bohuan/catkin_test/src/map/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1681,14 +1681,17 @@
 		<Unit filename="/home/bohuan/catkin_test/src/map/sample/test_cv2grid.cpp">
 			<Option target="test_cv2grid"/>
 		</Unit>
+		<Unit filename="/home/bohuan/catkin_test/src/map/sample/test_map_core.cpp">
+			<Option target="test_map_core"/>
+		</Unit>
 		<Unit filename="/home/bohuan/catkin_test/src/map/sample/test_map_db_node.cpp">
 			<Option target="test_map_db_node"/>
 		</Unit>
-		<Unit filename="/home/bohuan/catkin_test/src/map/src/map.cpp">
-			<Option target="map"/>
+		<Unit filename="/home/bohuan/catkin_test/src/map/src/map_core.cpp">
+			<Option target="test_map_core"/>
 		</Unit>
 		<Unit filename="/home/bohuan/catkin_test/src/map/src/point_cloud.cpp">
-			<Option target="map"/>
+			<Option target="test_map_core"/>
 			<Option target="test_map_db_node"/>
 		</Unit>
 		<Unit filename="/usr/src/gtest/src/gtest-all.cc">
